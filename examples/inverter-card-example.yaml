@@ -1,0 +1,88 @@
+type: custom:stack-in-card
+cards:
+  - type: conditional
+    conditions:
+      - entity: sensor.powmr_inverter_load_state
+        state: unavailable
+    card:
+      type: markdown
+      content: |
+        <ha-alert alert-type="warning">Inverter is turned off</ha-alert>
+      style: |
+        ha-card {
+          margin: 0px 0;
+          border: 0;
+        }
+  - type: conditional
+    conditions:
+      - entity: sensor.powmr_inverter_load_state
+        state_not: unavailable
+    card:
+      type: vertical-stack
+      cards:
+        - type: custom:sunsynk-power-flow-card
+          cardstyle: full
+          show_solar: true
+          show_battery: true
+          show_grid: true
+          panel_mode: false
+          decimal_places: 3
+          no_card: true
+          card_mod:
+            style: |
+              ha-card {
+                margin-top: -5px !important;
+              }
+              .card {
+                box-shadow: none !important;
+              }
+          inverter:
+            modern: false
+            colour: gray
+            autarky: power
+            model: powmr
+            tree_phase: false
+            auto_scale: true
+          battery:
+            energy: 11520
+            shutdown_soc: 5
+            colour: '#9A64A0'
+            show_daily: true
+            invert_power: true
+            show_absolute: true
+          solar:
+            show_daily: true
+            maxpower: 2400
+            pv1_name: Solar
+            mppts: 1
+            display_mode: 1
+          load:
+            show_daily: true
+            auto_scale: true
+          grid:
+            grid_name: Utility Power
+            show_daily_buy: false
+            show_daily_sell: false
+            show_nonessential: false
+            grid_off_colour: '#aaaa'
+          entities:
+            inverter_voltage_154: sensor.powmr_inverter_load_voltage
+            inverter_current_164: sensor.powmr_inverter_load_current
+            inverter_power_175: sensor.powmr_inverter_load_power
+            load_frequency_192: sensor.powmr_inverter_load_frequency
+            grid_connected_status_194: binary_sensor.powmr_inverter_grid_active
+            grid_ct_power_172: sensor.powmr_on_grid_power
+            day_load_energy_84: sensor.powmr_inverter_load_power_energy_spent_daily
+            battery_voltage_183: sensor.powmr_inverter_battery_voltage
+            battery_soc_184: sensor.inverter_battery_soc
+            battery_power_190: sensor.powmr_inverter_battery_power
+            battery_current_191: sensor.powmr_inverter_battery_current
+            battery_temp_182: sensor.jkbms_b2a8s20p_calb_temperature_sensor_1
+            battery_rated_capacity: 480
+            pv1_power_186: sensor.powmr_inverter_pv_power
+            pv1_voltage_109: sensor.powmr_inverter_pv_voltage
+            pv1_current_110: sensor.powmr_inverter_pv_current
+            day_pv_energy_108: sensor.powmr_inverter_pv_power_energy_spent_daily
+            environment_temp: sensor.sonoff_sw1_bme280_temperature_2
+            day_battery_charge_70: sensor.powmr_inverter_battery_daily_charge_energy
+            day_battery_discharge_71: sensor.powmr_inverter_battery_daily_discharge_energy

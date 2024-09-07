@@ -1,0 +1,3088 @@
+{
+  "ProtoName":"宁波德业",
+  "ProtoVersion":"1.0.0",
+  "Root": [
+    {
+      "address": 0,
+      "digits": 0,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Device type",
+        "zh_cn": "设备类型"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 1,
+      "digits": 0,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "communicate address",
+        "zh_cn": "通讯地址"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 2,
+      "digits": 0,
+      "spaceMark": ".",
+      "valueType": 3,
+      "iconName": "",
+      "title": {
+        "base": "communicate version",
+        "zh_cn": "通讯协议版本"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 3,
+      "digits": 0,
+      "length": 5,
+      "valueType": 2,
+      "iconName": "",
+      "title": {
+        "base": "SN",
+        "zh_cn": "序列号"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 15,
+      "digits": 0,
+      "subTitle": "--",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "install type",
+        "zh_cn": "安规类型"
+      },
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "3": "TUV",
+          "4": "DK5940",
+          "0": "UL",
+          "5": "AS4777",
+          "1": "CE",
+          "6": "RD1663",
+          "2": "CQC"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 16,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "rated power",
+        "zh_cn": "额定功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 18,
+      "digits": 0,
+      "spaceMark": "\/",
+      "valueType": 3,
+      "iconName": "",
+      "title": {
+        "base": "MPPT counts and Phase",
+        "zh_cn": "MPPT 路数及相数"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 20,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "boot power",
+        "zh_cn": "开机功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 21,
+      "digits": 0,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "boot check time",
+        "zh_cn": "开机自检时间"
+      },
+      "units": "S",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 22,
+      "digits": 0,
+      "length": 1,
+      "spaceMark": "\/",
+      "iconName": "",
+      "title": {
+        "base": "system time year \/ montg",
+        "zh_cn": "系统时间 年\/月"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 23,
+      "digits": 0,
+      "length": 1,
+      "spaceMark": "\/",
+      "iconName": "",
+      "title": {
+        "base": "system time day \/ hour",
+        "zh_cn": "系统时间 日 \/ 时"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 24,
+      "digits": 0,
+      "length": 1,
+      "spaceMark": "\/",
+      "iconName": "",
+      "title": {
+        "base": "system time min \/ second",
+        "zh_cn": "系统时间 分\/秒"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 25,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Insulation resistance lower limit",
+        "zh_cn": "绝缘阻抗下限"
+      },
+      "units": "KΩ",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 26,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Dc voltage limit",
+        "zh_cn": "直流电压上限"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 27,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Power grid voltage limit",
+        "zh_cn": "电网电压上限"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 28,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Power grid voltage limit",
+        "zh_cn": "电网电压下限"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 29,
+      "digits": 2,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid frequency limit",
+        "zh_cn": "电网频率上限"
+      },
+      "units": "Hz",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 30,
+      "digits": 2,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid frequency limit",
+        "zh_cn": "电网频率下限"
+      },
+      "units": "Hz",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 31,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid current limit",
+        "zh_cn": "电网电流上限"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 32,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Boot voltage limit",
+        "zh_cn": "开机电压上限"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 33,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Boot voltage limit",
+        "zh_cn": "开机电压下限"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 34,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "MPPT voltage limit",
+        "zh_cn": "MPPT 电压上限"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 35,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "MPPT voltage limit",
+        "zh_cn": "MPPT 电压下限"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 36,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Internal temperature limit",
+        "zh_cn": "机内温度上限"
+      },
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Active power control",
+        "zh_cn": "有功功率调节"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 41,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Reactive power regulation",
+        "zh_cn": "无功功率调节"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 42,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Apparent power adjustment",
+        "zh_cn": "视在功率调节"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 43,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "Switch machine can make",
+        "zh_cn": "开关机使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "close",
+          "1": "boot"
+        },
+        "zh_cn": {
+          "0": "关机",
+          "1": "开机"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 44,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "Restore the factory can make",
+        "zh_cn": "恢复出厂使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 45,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "Self-check can make",
+        "zh_cn": "自检使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 46,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "An island protection enabled",
+        "zh_cn": "孤岛保护使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 47,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "Power grid management can make",
+        "zh_cn": "电网管理使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 48,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "GFDI enabled",
+        "zh_cn": "GFDI 使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 49,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "RCD can make",
+        "zh_cn": "RCD 使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 50,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "RISO enabled",
+        "zh_cn": "RISO 使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 51,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "GFDI grounding can make",
+        "zh_cn": "GFDI 接地使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 52,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "PV curve can make",
+        "zh_cn": "PV 曲线使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 53,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "Low pressure through can make",
+        "zh_cn": "低压穿越使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "enable"
+        },
+        "zh_cn": {
+          "0": "失能",
+          "1": "使能"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 54,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "EEPROM initial can make",
+        "zh_cn": "EEPROM 初始使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "Initialization block panel EEPROM",
+          "2": "Initializes the communication block board EEPROM"
+        },
+        "zh_cn": {
+          "0": "normal work",
+          "1": "初始化控制板 EEPROM",
+          "2": "初始化通讯板 EEPROM"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 55,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "Firmware update can make",
+        "zh_cn": "固件更新使能"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "0": "disable",
+          "1": "Burning control panel firmware",
+          "2": "Burn the communication board firmware"
+        },
+        "zh_cn": {
+          "0": "正常工作",
+          "1": "烧录控制板固件",
+          "2": "烧录通讯板固件"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 59,
+      "digits": 0,
+      "length": 1,
+      "subTitle": "--",
+      "iconName": "",
+      "title": {
+        "base": "runing status",
+        "zh_cn": "运行状态"
+      },
+      "valueType": 1,
+      "units": "",
+      "enumerationStrings": {
+        "base": {
+          "3": "alarming",
+          "1": "self-inspection",
+          "4": "fault",
+          "2": "normal",
+          "0": "standby"
+        },
+        "zh_cn": {
+          "3": "告警",
+          "1": "自检",
+          "4": "故障",
+          "2": "正常",
+          "0": "待机"
+        }
+      },
+      "scale": 1
+    },
+    {
+      "address": 60,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The active power",
+        "zh_cn": "当日有功发电量"
+      },
+      "units": "KWh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 61,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The reactive power",
+        "zh_cn": "当日无功发电量"
+      },
+      "units": "kVarh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 62,
+      "digits": 0,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Hooked up to the time that day",
+        "zh_cn": "当日并网时间"
+      },
+      "units": "S",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 63,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The total active power generation",
+        "zh_cn": "总有功发电量"
+      },
+      "units": "kWh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 65,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The total reactive power",
+        "zh_cn": "总无功发电量"
+      },
+      "units": "kVarh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 67,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Total power generation time",
+        "zh_cn": "总发电时间"
+      },
+      "units": "h",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 69,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter efficiency",
+        "zh_cn": "逆变效率"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 70,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid voltage AB",
+        "zh_cn": "电网电压 AB"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 71,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid voltage BC",
+        "zh_cn": "电网电压 BC"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 72,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid voltage AC",
+        "zh_cn": "电网电压 AC"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 73,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid voltage A",
+        "zh_cn": "电网电压 A"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 74,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid voltage B",
+        "zh_cn": "电网电压 B"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 75,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "The grid voltage C",
+        "zh_cn": "电网电压 C"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 76,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid electricity A",
+        "zh_cn": "电网电流 A"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 77,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid electricity B",
+        "zh_cn": "电网电流 B"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 78,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid electricity C",
+        "zh_cn": "电网电流 C"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 79,
+      "digits": 2,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "grid frequency",
+        "zh_cn": "电网频率"
+      },
+      "units": "Hz",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 82,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Input active power",
+        "zh_cn": "输入有功功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 84,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Output apparent power",
+        "zh_cn": "输出视在功率"
+      },
+      "units": "VA",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 86,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Output active power",
+        "zh_cn": "输入有功功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 88,
+      "digits": 1,
+      "length": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Output reactive power",
+        "zh_cn": "输出无功功率"
+      },
+      "units": "Var",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Module 1 heat sink temperature",
+        "zh_cn": "模块 1 散热片温度"
+      },
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 91,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Module 2 heat sink temperature",
+        "zh_cn": "模块 2 散热片温度"
+      },
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 92,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inductor 1 temperature",
+        "zh_cn": "电感1温度"
+      },
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 93,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Module 2 heat sink temperature",
+        "zh_cn": "电感2温度"
+      },
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 94,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Transformer temperature",
+        "zh_cn": "变压器温度"
+      },
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 95,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Environmental temperature",
+        "zh_cn": "环境温度"
+      },
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 96,
+      "digits": 2,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "GFDI1 grounding current",
+        "zh_cn": "GFDI1 接地电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 97,
+      "digits": 2,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "GFDI2 grounding current",
+        "zh_cn": "GFDI2 接地电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 98,
+      "digits": 2,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "RCD leakage current",
+        "zh_cn": "RCD 漏电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 101,
+      "digits": 0,
+      "length": 1,
+      "subModels": "AlarmMessage1",
+      "iconName": "",
+      "title": {
+        "base": "Alarm message 1",
+        "zh_cn": "告警信息第 1 字"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 103,
+      "digits": 0,
+      "length": 1,
+      "subModels": "FaultInformationWord1",
+      "iconName": "",
+      "title": {
+        "base": "Fault information word 1",
+        "zh_cn": "故障信息第 1 字"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 104,
+      "digits": 0,
+      "length": 1,
+      "subModels": "FaultInformationWord2",
+      "iconName": "",
+      "title": {
+        "base": "Fault information word 2",
+        "zh_cn": "故障信息第 2 字"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 105,
+      "digits": 0,
+      "length": 1,
+      "subModels": "FaultInformationWord3",
+      "iconName": "",
+      "title": {
+        "base": "Fault information word 3",
+        "zh_cn": "故障信息第 3 字"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 106,
+      "digits": 0,
+      "length": 1,
+      "subModels": "FaultInformationWord4",
+      "iconName": "",
+      "title": {
+        "base": "Fault information word 4",
+        "zh_cn": "故障信息第 4 字"
+      },
+      "valueType": 1,
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 109,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "DC voltage",
+        "zh_cn": "直流电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 110,
+      "digits": 1,
+      "length": 1,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "DC current",
+        "zh_cn": "直流电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    }
+  ],
+  "OtherCodes": {
+    "FaultInformationWord1": [
+      {
+        "address": 0,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC Inversed Failure",
+          "zh_cn": "直流输入极性接反故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_Insulation_Failure",
+          "zh_cn": "直流绝缘阻抗永久故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "GFDI_Failure",
+          "zh_cn": "直流漏电流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "GFDI_Ground_Failure",
+          "zh_cn": "GFDI(电池一端接地)接地故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "EEPROM_Read_Failure",
+          "zh_cn": "读存储器错误"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "EEPROM_Write_Failure",
+          "zh_cn": "写存储器错误"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "GFDI_Fuse_Failure",
+          "zh_cn": "GFDI 保险丝熔断"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "GFDI_Relay_Failure",
+          "zh_cn": "GFDI(电池一端接地)接地接触 F08 器故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "IGBT_Failure",
+          "zh_cn": "IGBT 导通压降过大导致的 IGBT F09 故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AuxPowerBoard_Failure",
+          "zh_cn": "辅助开关电源故障(辅助开关电源主反馈直流电压过压或者欠压)"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_MainContactor_Failure",
+          "zh_cn": "交流主接触器错误(AC_MainContactor_Fault 连续\n出现 3 次时报错误)"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_SlaveContactor_Failure",
+          "zh_cn": "交流辅接触器错误(AC_SlaveContactor_ Fault 故障 连续出现 3 次)"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 13,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_OverCurr_Failure",
+          "zh_cn": "直流软件过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 14,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_OverCurr_Failure",
+          "zh_cn": "交流软件过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 15,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "GFCI_Failure",
+          "zh_cn": "GFCI(RCD)交流漏电流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      }
+    ],
+    "AlarmMessage1": [
+      {
+        "address": 0,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_Insulation_Warning",
+          "zh_cn": "直流绝缘阻抗过低告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Comm_LCD_Lose_Warning",
+          "zh_cn": "LCD 屏与控制板通信断开告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "LVRT_Fault_Warning",
+          "zh_cn": "低电压穿越故障告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Fan_Fault_Warning",
+          "zh_cn": "风扇故障告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_AirSwitchOpenWarning",
+          "zh_cn": "直流主断路器断开告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Fault_Feedback_Warning",
+          "zh_cn": "锁存的总硬件故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_Volt_Unbalance_Warning",
+          "zh_cn": "交流三相电压不平衡故障告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_PLL_Warning",
+          "zh_cn": "交流锁相环故障告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_Thunder_Warning",
+          "zh_cn": "DC 端防雷故障告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_Thunder_Warning",
+          "zh_cn": "AC 端防雷故障告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Smoke_Detect_Warning",
+          "zh_cn": "烟感告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Power_Derate_ Warning",
+          "zh_cn": "降额运行告警"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "scale": 1
+      }
+    ],
+    "FaultInformationWord2": [
+      {
+        "address": 0,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Tz_COM_OC_Fault",
+          "zh_cn": "三相电流和过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Tz_Ac_OverCurr_Fault",
+          "zh_cn": "硬件交流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Tz_Integ_Fault",
+          "zh_cn": "硬件集成故障(所有硬件故障的合 F19 成)"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Tz_Dc_OverCurr_Fault",
+          "zh_cn": "直流硬件过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Tz_GFDI_OC_Fault",
+          "zh_cn": "直流漏电流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Tz_EmergStop_Fault",
+          "zh_cn": "急停故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Tz_GFCI_OC_Fault",
+          "zh_cn": "交流漏电流瞬间过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_Insulation_ Fault",
+          "zh_cn": "直流绝缘阻抗故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_Feedback_Fault",
+          "zh_cn": "直流反灌故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "BusUnbalance_Fault",
+          "zh_cn": "直流母线不平衡故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_Insulation_Fault",
+          "zh_cn": "直流端绝缘隔离错误"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DCIOver_M1_Fault",
+          "zh_cn": "逆变 1 直流量高故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 12,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_AirSwitch_Fault",
+          "zh_cn": "交流负荷开关故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 13,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_OverCurr_Failure",
+          "zh_cn": "直流软件过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 14,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_MainContactor_Fault",
+          "zh_cn": "交流主接触器故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 15,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DCIOver_M2_Fault",
+          "zh_cn": "逆变 2 直流量高故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      }
+    ],
+    "FaultInformationWord3": [
+      {
+        "address": 0,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_OverCurr_Fault",
+          "zh_cn": "交流电流过高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_Overload_Fault",
+          "zh_cn": "交流过载"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_NoUtility_Fault",
+          "zh_cn": "交流端无市电错误"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_GridPhaseSeque_Fault",
+          "zh_cn": "交流电网相序错误"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_Volt_Unbalance_Fault",
+          "zh_cn": "交流三相电压不平衡故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_Curr_Unbalance_Fault",
+          "zh_cn": "交流三相电流不平衡故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "INT_AC_OverCurr_Fault",
+          "zh_cn": "交流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "INT_DC_OverCurr_Fault",
+          "zh_cn": "直流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_WU_OverVolt_Fault",
+          "zh_cn": "交流 WU 线电压过高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_WU_UnderVolt_Fault",
+          "zh_cn": "交流 WU 线电压过低"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_VW_OverVolt_Fault",
+          "zh_cn": "交流 VW 线电压过高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_VW_UnderVolt_Fault",
+          "zh_cn": "交流 VW 线电压过低"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 12,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_UV_OverVolt_Fault",
+          "zh_cn": "交流 UV 线电压过高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 13,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_UV_UnderVolt_Fault",
+          "zh_cn": "交流 UV 线电压过低"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 14,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_OverFreq_Fault",
+          "zh_cn": "交流频率过高故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 15,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_UnderFreq_Fault",
+          "zh_cn": "交流频率过低故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      }
+    ],
+    "FaultInformationWord4": [
+      {
+        "address": 0,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_U_GridCurr_DcHigh_Fault",
+          "zh_cn": "U 相并网电流直流分量高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_V_GridCurr_DcHigh_Fault",
+          "zh_cn": "V 相并网电流直流分量高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_W_GridCurr_DcHigh_Fault",
+          "zh_cn": "W 相并网电流直流分量高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_A_InductCurr_DcHigh_Fault",
+          "zh_cn": "交流电感 A 相电流直流分量过高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_B_InductCurr_DcHigh_Fault",
+          "zh_cn": "交流电感 B 相电流直流分量过高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_C_InductCurr_DcHigh_Fault",
+          "zh_cn": "交流电感 C 相电流直流分量过高"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_VoltHigh_Fault",
+          "zh_cn": "直流母线电压过高故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "DC_VoltLow_Fault",
+          "zh_cn": "直流母线电压过低故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_BackFeed_Fault",
+          "zh_cn": "交流反灌故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_U_GridCurr_High_Fault",
+          "zh_cn": "交流电网 U 电流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_V_GridCurr_High_Fault",
+          "zh_cn": "交流电网 V 电流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_W_GridCurr_High_Fault",
+          "zh_cn": "交流电网 W 电流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 12,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_A_InductCurr_High_Fault",
+          "zh_cn": "电抗器 A 相电流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 13,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_B_InductCurr_High_Fault",
+          "zh_cn": "电抗器 B 相电流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 14,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "AC_C_InductCurr_High_Fault",
+          "zh_cn": "电抗器 C 相电流过流故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      },
+      {
+        "address": 15,
+        "digits": 0,
+        "subTitle": "--",
+        "valueType": 1,
+        "iconName": "",
+        "title": {
+          "base": "Heatsink_LowTemp_Fault",
+          "zh_cn": "IGBT 散热器温度过低故障"
+        },
+        "units": "",
+        "enumerationStrings": {
+          "base": {
+            "0": "normal",
+            "1": "fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "scale": 1
+      }
+    ]
+  },
+  "Configuration": {
+    "devAddrs": [
+      "1"
+    ],
+    "SystemSettingVC": [
+      {
+        "title": {
+          "base": "System Status",
+          "zh_cn": "系统状态"
+        },
+        "segments": [
+          {
+            "canEdit": true,
+            "length": 17,
+            "funNumber": "3",
+            "startAddress": 20
+          },
+          {
+            "canEdit": true,
+            "length": 17,
+            "funNumber": "3",
+            "startAddress": 39
+          },
+          {
+            "canEdit": true,
+            "length": 2,
+            "funNumber": "3",
+            "startAddress": 109
+          },
+          {
+            "canEdit": true,
+            "length": 13,
+            "funNumber": "3",
+            "startAddress": 82
+          },
+          {
+            "canEdit": true,
+            "length": 18,
+            "funNumber": "3",
+            "startAddress": 59
+          }
+        ]
+      },
+      {
+        "title": {
+          "base": "Alarm info",
+          "zh_cn": "告警信息"
+        },
+        "segments": [
+          {
+            "canEdit": true,
+            "length": 6,
+            "funNumber": "3",
+            "startAddress": 101
+          }
+        ]
+      }
+    ],
+    "writeMoreFunCode": 16,
+    "writeOneFunCode": 16,
+    "SystemInfoVC": [
+      {
+        "title": {
+          "base": "base info",
+          "zh_cn": "基本信息"
+        },
+        "segments": [
+          {
+            "canEdit": false,
+            "length": 4,
+            "funNumber": "3",
+            "startAddress": 0
+          },
+          {
+            "canEdit": false,
+            "length": 4,
+            "funNumber": "3",
+            "startAddress": 15
+          }
+        ]
+      }
+    ],
+    "addressOffset": {
+      "offsetType": 0,
+      "offsetAddress": 0,
+      "offsetBase": 1
+    }
+  }
+}

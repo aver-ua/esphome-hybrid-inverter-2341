@@ -1,0 +1,490 @@
+{
+  "Root": [
+    {
+      "address": 40500,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "MPPT1 Input Voltage",
+        "zh_cn": "MPPT1输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40501,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "MPPT2 Input Voltage",
+        "zh_cn": "MPPT2输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40502,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "MPPT3 Input Voltage",
+        "zh_cn": "MPPT3输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40503,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "MPPT4 Input Voltage",
+        "zh_cn": "MPPT4输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40508,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 01 Input Current",
+        "zh_cn": "组串01输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40509,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 02 Input Current",
+        "zh_cn": "组串02输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40510,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 03 Input Current",
+        "zh_cn": "组串03输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40511,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 04 Input Current",
+        "zh_cn": "组串04输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40512,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 05 Input Current",
+        "zh_cn": "组串05输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40513,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 06 Input Current",
+        "zh_cn": "组串06输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40514,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 07 Input Current",
+        "zh_cn": "组串07输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40515,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 08 Input Current",
+        "zh_cn": "组串08输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40516,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "String 09 Input Current",
+        "zh_cn": "组串09输入电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+
+    {
+      "address": 40524,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "MPPT1 input power",
+        "zh_cn": "MPPT1输入功率"
+      },
+      "units": "kw",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40525,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "MPPT2  input power",
+        "zh_cn": "MPPT2输入功率"
+      },
+      "units": "kw",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40526,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "MPPT3  input power",
+        "zh_cn": "MPPT3输入功率"
+      },
+      "units": "kw",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40527,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "MPPT4  input power",
+        "zh_cn": "MPPT4输入功率"
+      },
+      "units": "kw",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40532,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid AB line voltage",
+        "zh_cn": "电网AB线电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40533,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid CB line voltage",
+        "zh_cn": "电网BC线电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40534,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid CA line voltage",
+        "zh_cn": "电网CA线电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40538,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Grid frequency",
+        "zh_cn": "电网频率"
+      },
+      "units": "Hz",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40539,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "AC active power",
+        "zh_cn": "交流有功功率"
+      },
+      "units": "kw",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40540,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "AC reactive power",
+        "zh_cn": "交流无功功率"
+      },
+      "units": "kVar",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40541,
+      "valueType": 0,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "DC input power",
+        "zh_cn": "直流输入功率"
+      },
+      "units": "kw",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40542,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Inverter efficiency",
+        "zh_cn": "逆变器效率"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40544,
+      "valueType": 0,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Temperature inside the machine",
+        "zh_cn": "机内温度"
+      },
+      "units": "℃",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40545,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Insulation resistance",
+        "zh_cn": "绝缘阻抗"
+      },
+      "units": "kΩ",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 40548,
+      "length":2,
+      "byteSoft":1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Power generation of the day",
+        "zh_cn": "当日发电量"
+      },
+      "units": "kWh",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 40550,
+      "length":2,
+      "byteSoft":1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Cumulative power generation",
+        "zh_cn": "累计发电量"
+      },
+      "units": "kWh",
+      "subTitle": "--",
+      "scale": 0.01
+    }
+  ,
+    {
+      "address": 40552,
+      "length":2,
+      "byteSoft":1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "CO2 reduction",
+        "zh_cn": "二氧化碳减排量"
+      },
+      "units": "kg",
+      "subTitle": "--",
+      "scale": 0.01
+    }
+
+
+
+
+
+  ],
+  "OherCodes": {},
+  "Configuration": {
+    "devAddrs": [
+      "1"
+    ],
+    "writeOneFunCode": 6,
+    "writeMoreFunCode": 10,
+    "SystemInfoVC": [
+      {
+        "title": {
+          "base": "System data",
+          "zh_cn": "系统数据"
+        },
+        "segments": [
+          {
+            "canEdit": false,
+            "length": 4,
+            "funNumber": 3,
+            "startAddress": 40500
+          },
+          {
+            "canEdit": false,
+            "length": 9,
+            "funNumber": 3,
+            "startAddress": 40508
+          },
+          {
+            "canEdit": false,
+            "length": 4,
+            "funNumber": 3,
+            "startAddress": 40524
+          },
+          {
+            "canEdit": false,
+            "length": 3,
+            "funNumber": 3,
+            "startAddress": 40532
+          },
+          {
+            "canEdit": false,
+            "length": 5,
+            "funNumber": 3,
+            "startAddress": 40538
+          },
+          {
+            "canEdit": false,
+            "length": 2,
+            "funNumber": 3,
+            "startAddress": 40544
+          },
+
+          {
+            "canEdit": false,
+            "length": 3,
+            "funNumber": 3,
+            "startAddress": 40548
+          }
+
+        ]
+      }
+    ],
+    "SystemSettingVC": [
+      {
+        "title": {
+          "base": "System Setting",
+          "zh_cn": "系统设置"
+        },
+        "segments": [
+          {
+            "canEdit": true,
+            "length": 1,
+            "funNumber": 3,
+            "startAddress": 40200
+          }
+        ]
+      }
+    ],
+    "addressOffset": {
+      "offsetBase": 1,
+      "offsetType": 0,
+      "offsetAddress": 0
+    }
+  }
+}

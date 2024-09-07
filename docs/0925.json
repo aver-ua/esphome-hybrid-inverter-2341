@@ -1,0 +1,2730 @@
+{
+	"Root": [{
+		"address": 4501,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Working State",
+			"zh_cn": "运行状态"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": "WorkingState",
+		"scale": 1
+	}, {
+		"address": 4502,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "AC input voltage",
+			"zh_cn": "市电电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4503,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "AC input frequency",
+			"zh_cn": "市电频率"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4504,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV input voltage",
+			"zh_cn": "PV 输入电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4505,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV input power",
+			"zh_cn": "PV 输入功率"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4506,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery voltage",
+			"zh_cn": "电池电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4507,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery capacity %",
+			"zh_cn": "电池容量百分比"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4508,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charging current",
+			"zh_cn": "电池充电电流"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4509,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery discharge current",
+			"zh_cn": "电池放电电流"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4510,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output voltage",
+			"zh_cn": "输出电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4511,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output frequency",
+			"zh_cn": "输出频率"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4512,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output apparent power ",
+			"zh_cn": "输出视在功率"
+		},
+		"units": "VA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4513,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output active power",
+			"zh_cn": "输出有功功率"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4514,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "AC output Load %",
+			"zh_cn": "负载百分比"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4517,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Machine Type",
+			"zh_cn": "机器产品类型"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": "MachineType",
+		"scale": 1
+	}, {
+		"address": 4518,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Main CPU version",
+			"zh_cn": "主版本号"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4519,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Secondary CPU version",
+			"zh_cn": "次版本号"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4520,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Battery Piece",
+			"zh_cn": "电池节数"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": "BatteryPiece",
+		"scale": 1
+	}, {
+		"address": 4521,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Nonimal output apparent power",
+			"zh_cn": "额定视在功率"
+		},
+		"units": "VA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4522,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Nonimal output active power",
+			"zh_cn": "额定功率"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4523,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Nominal AC voltage",
+			"zh_cn": "额定输入电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4524,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Nominal AC current",
+			"zh_cn": "额定输入电流"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4525,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Rated battery voltage",
+			"zh_cn": "额定电池电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4526,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Nominal output voltage",
+			"zh_cn": "额定输出电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4527,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Nominal output frequency",
+			"zh_cn": "额定输出频率"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4528,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Nominal output current",
+			"zh_cn": "额定输出电流"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4529,
+		"byteSort": 1,
+		"digits": 0,
+		"subModels": "ErrorCode1",
+		"iconName": "",
+		"title": {
+			"base": "errorCode1",
+			"zh_cn": "故障码1"
+		},
+		"valueType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4530,
+		"byteSort": 1,
+		"digits": 0,
+		"subModels": "AlarmCode1",
+		"iconName": "",
+		"title": {
+			"base": "AlarmCode1",
+			"zh_cn": "告警码1"
+		},
+		"valueType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4531,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ID1",
+			"zh_cn": "ID1"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4532,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ID2",
+			"zh_cn": "ID2"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4533,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ID3",
+			"zh_cn": "ID3"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4534,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ID4",
+			"zh_cn": "ID4"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4535,
+		"byteSort": 1,
+		"digits": 0,
+		"subModels": "SystemState1",
+		"iconName": "",
+		"title": {
+			"base": "Setting state",
+			"zh_cn": "设定状态查询"
+		},
+		"valueType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4536,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Charger source priority",
+			"zh_cn": "充电器源优先级"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "Solar only",
+				"1": "Solar",
+				"2": "Utility or Solar (default)",
+				"0": "Utility"
+			},
+			"zh_cn": {
+				"3": "Solar only",
+				"1": "Solar",
+				"2": "Utility or Solar (default)",
+				"0": "Utility"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4537,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Output Source priority",
+			"zh_cn": "输出源优先级"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "Utility (default)",
+				"1": "Solar",
+				"2": "SBU"
+			},
+			"zh_cn": {
+				"0": "Utility (default)",
+				"1": "Solar",
+				"2": "SBU"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4538,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "AC input range",
+			"zh_cn": "交流输入范围"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "Appliances (default)",
+				"1": "UPS"
+			},
+			"zh_cn": {
+				"0": "Appliances (default)",
+				"1": "UPS"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4539,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Battery type",
+			"zh_cn": "电池类型"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "AGM (default)",
+				"1": "Flooed",
+				"2": "User"
+			},
+			"zh_cn": {
+				"0": "AGM (default)",
+				"1": "Flooed",
+				"2": "User"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4540,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Output Frequency",
+			"zh_cn": "输出频率"
+		},
+		"valueType": 1,
+		"units": "Hz",
+		"enumerationStrings": {
+			"base": {
+				"0": "50Hz(default)",
+				"1": "60Hz"
+			},
+			"zh_cn": {
+				"0": "50Hz(default)",
+				"1": "60Hz"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4541,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Max total charge current",
+			"zh_cn": "总充电电流"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"60": "60A(default)",
+				"50": "50A",
+				"40": "40A",
+				"30": "30A",
+				"20": "20A",
+				"80": "80A",
+				"10": "10A",
+				"70": "70A"
+			},
+			"zh_cn": {
+				"60": "60A(default)",
+				"50": "50A",
+				"40": "40A",
+				"30": "30A",
+				"20": "20A",
+				"80": "80A",
+				"10": "10A",
+				"70": "70A"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4542,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Output voltage",
+			"zh_cn": "输出电压"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"220": "220V",
+				"230": "230V",
+				"240": "240V"
+			},
+			"zh_cn": {
+				"220": "220V",
+				"230": "230V",
+				"240": "240V"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4543,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Max utility charge current",
+			"zh_cn": "市电最大充电电流"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"60": "60A",
+				"50": "50A",
+				"40": "40A",
+				"30": "30A",
+				"20": "20A",
+				"10": "10A",
+				"2": "2A"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4544,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Comeback utility mode voltage point under \"SBU priority\"",
+			"zh_cn": "返回市电模式电压点(SBU模式)"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"470": "47.0V",
+				"250": "25.0V",
+				"510": "51.0V",
+				"255": "25.5V",
+				"450": "45.0V",
+				"230": "23.0V",
+				"235": "23.5V",
+				"430": "43.0V",
+				"210": "21.0V",
+				"480": "48.0V",
+				"215": "21.5V",
+				"460": "46.0V",
+				"240": "24.0V",
+				"500": "50.0V",
+				"245": "24.5V",
+				"440": "44.0V",
+				"220": "22.0V",
+				"490": "49.0V",
+				"225": "22.5V",
+				"420": "42.0V"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4545,
+		"byteSort": 1,
+		"digits": 0,
+		"subTitle": "--",
+		"iconName": "",
+		"title": {
+			"base": "Comeback battery mode voltage point under \"SBU priority\"",
+			"zh_cn": "返回电池模式电压点(SBU模式)"
+		},
+		"valueType": 1,
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"275": "27.5V",
+				"580": "58.0V",
+				"250": "25.0V",
+				"510": "51.0V",
+				"255": "25.5V",
+				"560": "56.0V",
+				"600": "60.0V",
+				"0": "需进入浮充",
+				"280": "28.0V",
+				"540": "54.0V",
+				"285": "28.5V",
+				"480": "48.0V",
+				"590": "59.0V",
+				"260": "26.0V",
+				"520": "52.0V",
+				"265": "26.5V",
+				"570": "57.0V",
+				"240": "24.0V",
+				"500": "50.0V",
+				"290": "29.0V",
+				"245": "24.5V",
+				"550": "55.0V",
+				"490": "49.0V",
+				"270": "27.0V",
+				"530": "53.0V"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 4546,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Bulk charging voltage",
+			"zh_cn": "恒压充电电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4547,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Floting charging voltage",
+			"zh_cn": "浮充电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4548,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Low Battery cut-off voltage",
+			"zh_cn": "电池低压关机点"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4549,
+		"byteSort": 1,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalization voltage",
+			"zh_cn": "电池均充电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 4550,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalized time",
+			"zh_cn": "电池均充时间"
+		},
+		"units": "min",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4551,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalized timeout",
+			"zh_cn": "电池均充超时"
+		},
+		"units": "min",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4552,
+		"byteSort": 1,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalization interval",
+			"zh_cn": "电池均充间隔"
+		},
+		"units": "day",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4553,
+		"byteSort": 1,
+		"digits": 0,
+		"subModels": "APPShows",
+		"iconName": "",
+		"title": {
+			"base": "APP show",
+			"zh_cn": "APP显示界面"
+		},
+		"valueType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 4554,
+		"byteSort": 1,
+		"digits": 2,
+		"length": 2,
+		"iconName": "",
+		"title": {
+			"base": "Today energy",
+			"zh_cn": "今天发电量"
+		},
+		"valueType": 1,
+		"units": "KWH",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 4556,
+		"byteSort": 1,
+		"digits": 2,
+		"length": 2,
+		"iconName": "",
+		"title": {
+			"base": "Month energy",
+			"zh_cn": "当月发电量"
+		},
+		"valueType": 1,
+		"units": "KWH",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 4558,
+		"byteSort": 1,
+		"digits": 2,
+		"length": 2,
+		"iconName": "",
+		"title": {
+			"base": "Year energy",
+			"zh_cn": "当年发电量"
+		},
+		"valueType": 1,
+		"units": "KWH",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 4560,
+		"byteSort": 1,
+		"digits": 2,
+		"length": 2,
+		"iconName": "",
+		"title": {
+			"base": "All energy",
+			"zh_cn": "历年发电量"
+		},
+		"valueType": 1,
+		"units": "KWH",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 5001,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Remove all power history",
+			"zh_cn": "清除历史所有发电量"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "Do nothing",
+				"1": "Remove all power history"
+			},
+			"zh_cn": {
+				"0": "不动作",
+				"1": "清除历史所有发电量"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 5002,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Buzzer alarm",
+			"zh_cn": "蜂鸣器设置"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5003,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power saving mode",
+			"zh_cn": "节能模式设置"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5004,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "LCD backlight",
+			"zh_cn": "LCD背光灯关闭设置"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5005,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Overload auto restart",
+			"zh_cn": "过载重启设置"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5006,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Over temperature auto restart",
+			"zh_cn": "过温重启设置"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5007,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Beeps while primary source interupt",
+			"zh_cn": "高优先级源接入，蜂鸣器提示"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5008,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Auto return to default display screen",
+			"zh_cn": "返回LCD主页面"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5009,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Transfer to bypass @ overload",
+			"zh_cn": "过载转旁路"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5010,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record fault code",
+			"zh_cn": "记录错误模式"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5011,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalization",
+			"zh_cn": "电池均充"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5012,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalization activated immediately",
+			"zh_cn": "电池均充立即执行"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5016,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Restore Defaults",
+			"zh_cn": "一键恢复所有设置"
+		},
+		"units": "",
+		"enumerationStrings": "EnableCode1",
+		"scale": 1
+	}, {
+		"address": 5017,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charger source priority",
+			"zh_cn": "充电器源优先级"
+		},
+		"units": "",
+		"enumerationStrings": "ChargerSourcePriority",
+		"scale": 1
+	}, {
+		"address": 5018,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output Source priority",
+			"zh_cn": "输出源优先级"
+		},
+		"units": "",
+		"enumerationStrings": "OutputSourcePriority",
+		"scale": 1
+	}, {
+		"address": 5019,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "AC input range",
+			"zh_cn": "交流输入范围"
+		},
+		"units": "",
+		"enumerationStrings": "ACInputRange",
+		"scale": 1
+	}, {
+		"address": 5020,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery type",
+			"zh_cn": "电池类型"
+		},
+		"units": "",
+		"enumerationStrings": "BatteryType",
+		"scale": 1
+	}, {
+		"address": 5021,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output Frequency",
+			"zh_cn": "输出频率"
+		},
+		"units": "",
+		"enumerationStrings": "OutputFrequency",
+		"scale": 1
+	}, {
+		"address": 5022,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Max total charge current",
+			"zh_cn": "总充电电流"
+		},
+		"units": "",
+		"enumerationStrings": "MaxTotalChargeCurrent",
+		"scale": 1
+	}, {
+		"address": 5023,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output voltage",
+			"zh_cn": "输出电压"
+		},
+		"units": "",
+		"enumerationStrings": "OutputVoltage",
+		"scale": 1
+	}, {
+		"address": 5024,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Max utility charge current",
+			"zh_cn": "市电最大充电电流"
+		},
+		"units": "",
+		"enumerationStrings": "MaxUtilityChargeCurrent",
+		"scale": 1
+	}, {
+		"address": 5025,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Comeback utility mode voltage point under \"SBU priority\"",
+			"zh_cn": "返回市电模式电压点（SBU模式）"
+		},
+		"units": "",
+		"enumerationStrings": "ComebackUtilityMode",
+		"scale": 1
+	}, {
+		"address": 5026,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Comeback battery mode voltage point under \"SBU priority",
+			"zh_cn": "返回电池模式电压点（SBU模式）"
+		},
+		"units": "",
+		"enumerationStrings": "ComebackBatteryMode",
+		"scale": 1
+	}, {
+		"address": 5027,
+		"digits": 0,
+		"stepEnumeration": "FlotingChargingVoltage",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Bulk charging voltage",
+			"zh_cn": "恒压充电电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 5028,
+		"digits": 0,
+		"stepEnumeration": "FlotingChargingVoltage",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Floting charging voltage",
+			"zh_cn": "浮充电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 5029,
+		"digits": 0,
+		"stepEnumeration": "BatteryCut-offVoltage",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Low Battery cut-off voltage",
+			"zh_cn": "电池低压关机点"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 5030,
+		"digits": 0,
+		"stepEnumeration": "BatteryEqualizationVoltage",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalization voltage",
+			"zh_cn": "电池均充电压"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 5031,
+		"digits": 0,
+		"stepEnumeration": "BatteryChargingTimeout",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalized time",
+			"zh_cn": "电池均充时间"
+		},
+		"units": "min",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 5032,
+		"digits": 0,
+		"stepEnumeration": "BatteryChargingTimeout",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalized timeout",
+			"zh_cn": "电池均充超时"
+		},
+		"units": "min",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 5033,
+		"digits": 0,
+		"stepEnumeration": "BatteryChargingTimes",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Equalization interval",
+			"zh_cn": "电池均充间隔"
+		},
+		"units": "day",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 6030,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "System time setting - year",
+			"zh_cn": "系统时间设置-年"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 6031,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "System time setting - month",
+			"zh_cn": "系统时间设置-月"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 6032,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "System time setting - day",
+			"zh_cn": "系统时间设置-日"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 6033,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "System time setting - hour",
+			"zh_cn": "系统时间设置-时"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 6034,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "System time setting - min",
+			"zh_cn": "系统时间设置-分"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 6035,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "System time setting - second",
+			"zh_cn": "系统时间设置-秒"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}],
+	"OtherCodes": {
+		"FlotingChargingVoltage": [{
+			"start": 250,
+			"digits": 1,
+			"end": 315,
+			"step": 1,
+			"unit": "V",
+			"scale": 0.1
+		}, {
+			"start": 480,
+			"digits": 1,
+			"end": 610,
+			"step": 1,
+			"unit": "V",
+			"scale": 0.1
+		}],
+		"OutputSourcePriority": {
+			"base": {
+				"0": "Utility (default)",
+				"1": "Solar",
+				"2": "SBU"
+			}
+		},
+		"MachineType": {
+			"base": {
+				"0": "Solar Inverter",
+				"1": "Voltage regulator"
+			},
+			"zh_cn": {
+				"0": "储能逆变器",
+				"1": "稳压器"
+			}
+		},
+		"WorkingState": {
+			"base": {
+				"7": "ShutDown",
+				"3": "Invert Mode",
+				"4": "Line Mode",
+				"0": "Power On",
+				"5": "Bypass",
+				"1": "Test",
+				"6": "Fault Mode",
+				"2": "Stand By"
+			},
+			"zh_cn": {
+				"7": "关机模式",
+				"3": "逆变模式",
+				"4": "市电模式",
+				"0": "上电模式",
+				"5": "旁路模式",
+				"1": "测试模式",
+				"6": "错误模式",
+				"2": "待机模式"
+			}
+		},
+		"BatteryType": {
+			"base": {
+				"0": "AGM (default)",
+				"1": "Flooed",
+				"2": "User"
+			}
+		},
+		"ComebackUtilityMode": {
+			"base": {
+				"470": "47.0V",
+				"250": "25.0V",
+				"510": "51.0V",
+				"255": "25.5V",
+				"450": "45.0V",
+				"230": "23.0V",
+				"235": "23.5V",
+				"430": "43.0V",
+				"210": "21.0V",
+				"480": "48.0V",
+				"215": "21.5V",
+				"460": "46.0V",
+				"240": "24.0V",
+				"500": "50.0V",
+				"245": "24.5V",
+				"440": "44.0V",
+				"220": "22.0V",
+				"490": "49.0V",
+				"225": "22.5V",
+				"420": "42.0V"
+			}
+		},
+		"BatteryPiece": {
+			"base": {
+				"0": "no battery",
+				"1": "24V（3KW）",
+				"2": "48V（5KW)"
+			},
+			"zh_cn": {
+				"0": "不带电池",
+				"1": "24V（3KW）",
+				"2": "48V（5KW)"
+			}
+		},
+		"OutputFrequency": {
+			"base": {
+				"0": "50Hz (default)",
+				"1": "60Hz"
+			}
+		},
+		"batteryChargingTimeout": [{
+			"start": 5,
+			"digits": 0,
+			"end": 900,
+			"step": 5,
+			"unit": "min",
+			"scale": 1
+		}],
+		"MaxUtilityChargeCurrent": {
+			"base": {
+				"70": "70A",
+				"60": "60A",
+				"50": "50A",
+				"40": "40A",
+				"30": "30A (default)",
+				"20": "20A",
+				"80": "80A",
+				"10": "10A",
+				"2": "2A"
+			}
+		},
+		"batteryCut-offVoltage": [{
+			"start": 200,
+			"digits": 1,
+			"end": 240,
+			"step": 1,
+			"unit": "V",
+			"scale": 0.1
+		}, {
+			"start": 400,
+			"digits": 1,
+			"end": 480,
+			"step": 1,
+			"unit": "V",
+			"scale": 0.1
+		}],
+		"batteryChargingTimes": [{
+			"start": 0,
+			"digits": 0,
+			"end": 90,
+			"step": 1,
+			"unit": "day",
+			"scale": 1
+		}],
+		"MaxTotalChargeCurrent": {
+			"base": {
+				"60": "60A (default)",
+				"50": "50A",
+				"40": "40A",
+				"30": "30A",
+				"20": "20A",
+				"80": "80A",
+				"10": "10A",
+				"70": "70A"
+			}
+		},
+		"OutputVoltage": {
+			"base": {
+				"220": "220V",
+				"230": "230V (default)",
+				"240": "240V"
+			}
+		},
+		"SystemState1": [{
+			"address": 0,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Buzzer alarm",
+				"en_us": "Buzzer alarm",
+				"zh_cn": "蜂鸣器设置"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 1,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Power saving mode",
+				"en_us": "Power saving mode",
+				"zh_cn": "节能模式设置"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 2,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "LCD backlight",
+				"en_us": "LCD backlight",
+				"zh_cn": "LCD背光灯关闭设置"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 3,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Overload auto restart",
+				"en_us": "Overload auto restart",
+				"zh_cn": "过载重启设置"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 4,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Over temperature auto restart",
+				"en_us": "Over temperature auto restart",
+				"zh_cn": "过温重启设置"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 5,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Beeps while primary source interupt",
+				"en_us": "Beeps while primary source interupt",
+				"zh_cn": "高优先级源接入，蜂鸣器提示"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 6,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Auto return to default display screen",
+				"en_us": "Auto return to default display screen",
+				"zh_cn": "返回LCD主页面"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 7,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Transfer to bypass @ overload",
+				"en_us": "Transfer to bypass @ overload",
+				"zh_cn": "过载转旁路"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 8,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Record fault code",
+				"en_us": "Record fault code",
+				"zh_cn": "记录错误模式"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 9,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery Equalization",
+				"en_us": "Battery Equalization",
+				"zh_cn": "电池均衡"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 10,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery Equalization activated immediately",
+				"en_us": "Battery Equalization activated immediately",
+				"zh_cn": "电池均衡立即激活"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"en_us": {
+					"0": "disable",
+					"1": "enable"
+				},
+				"zh_cn": {
+					"0": "禁止",
+					"1": "使能"
+				}
+			},
+			"scale": 1
+		}],
+		"ACInputRange": {
+			"base": {
+				"0": "Appliances (default)",
+				"1": "UPS"
+			}
+		},
+		"EnableCode1": {
+			"base": {
+				"0": "disable",
+				"1": "enable"
+			},
+			"zh_cn": {
+				"0": "禁止",
+				"1": "使能"
+			}
+		},
+		"batteryEqualizationVoltage": [{
+			"start": 250,
+			"digits": 1,
+			"end": 315,
+			"step": 1,
+			"unit": "V",
+			"scale": 0.1
+		}, {
+			"start": 480,
+			"digits": 1,
+			"end": 610,
+			"step": 1,
+			"unit": "V",
+			"scale": 0.1
+		}],
+		"AlarmCode1": [{
+			"address": 0,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Fan Locked",
+				"en_us": "Fan Locked",
+				"zh_cn": "风机告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 1,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Over Temperater",
+				"en_us": "Over Temperater",
+				"zh_cn": "过温告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 2,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery Over Charged",
+				"en_us": "Battery Over Charged",
+				"zh_cn": "电池电压过冲告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 3,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery Voltage Low",
+				"en_us": "Battery Voltage Low",
+				"zh_cn": "电池电压低告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 4,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Over Load",
+				"en_us": "Over Load",
+				"zh_cn": "负载过载告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 5,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Output Power Derating",
+				"en_us": "Output Power Derating",
+				"zh_cn": "降功率告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 6,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "PV Energy Weak",
+				"en_us": "PV Energy Weak",
+				"zh_cn": "PV能量弱告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 7,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "AC Voltage High",
+				"en_us": "AC Voltage High",
+				"zh_cn": "输入过压告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 8,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "No Battery",
+				"en_us": "No Battery",
+				"zh_cn": "电池未接告警"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"en_us": {
+					"0": "normal",
+					"1": "alarm"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "告警"
+				}
+			},
+			"scale": 1
+		}],
+		"ChargerSourcePriority": {
+			"base": {
+				"3": "Solar only",
+				"1": "Solar",
+				"2": "Utility or Solar (default)",
+				"0": "Utility"
+			}
+		},
+		"APPShows": [{
+			"address": 0,
+			"digits": 0,
+			"length": 2,
+			"subTitle": "--",
+			"iconName": "",
+			"title": {
+				"base": "Battery show",
+				"zh_cn": "电池显示"
+			},
+			"valueType": 1,
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"3": "Battery Ok",
+					"1": "Battery discharging",
+					"2": "Battery charging",
+					"0": "Battery disconnected"
+				},
+				"zh_cn": {
+					"3": "电池OK",
+					"1": "电池放电",
+					"2": "电池充电",
+					"0": "电池未接"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 2,
+			"digits": 0,
+			"length": 2,
+			"subTitle": "--",
+			"iconName": "",
+			"title": {
+				"base": "PV show",
+				"zh_cn": "PV 显示"
+			},
+			"valueType": 1,
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"3": "PV OK",
+					"1": "PV discharging",
+					"2": "PV overvoltage",
+					"0": "PV undervoltage"
+				},
+				"zh_cn": {
+					"3": "PV OK",
+					"1": "PV放电",
+					"2": "PV过压",
+					"0": "PV欠压"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 4,
+			"digits": 0,
+			"length": 2,
+			"subTitle": "--",
+			"iconName": "",
+			"title": {
+				"base": "Mains supply show",
+				"zh_cn": "市电显示"
+			},
+			"valueType": 1,
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"3": "Mains supply OK",
+					"1": "Mains supply absorption",
+					"2": "Mains supply discharging",
+					"0": "Mains supply abnormal"
+				},
+				"zh_cn": {
+					"3": "市电OK",
+					"1": "市电吸收能量",
+					"2": "市电放电",
+					"0": "市电异常"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 6,
+			"digits": 0,
+			"length": 2,
+			"subTitle": "--",
+			"iconName": "",
+			"title": {
+				"base": "Loader",
+				"zh_cn": "负载"
+			},
+			"valueType": 1,
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"3": "Battery Ok",
+					"1": "Battery discharging",
+					"2": "Battery charging",
+					"0": "Battery disconnected"
+				},
+				"zh_cn": {
+					"0": "负载关闭",
+					"1": "负载正常",
+					"2": "负载过载"
+				}
+			},
+			"scale": 1
+		}],
+		"ComebackBatteryMode": {
+			"base":{
+				"275": "27.5V",
+				"580": "58.0V",
+				"250": "25.0V",
+				"510": "51.0V",
+				"255": "25.5V",
+				"560": "56.0V",
+				"600": "60.0V",
+				"0": "Battery fully charged",
+				"280": "28.0V",
+				"540": "54.0V",
+				"285": "28.5V",
+				"480": "48.0V",
+				"590": "59.0V",
+				"260": "26.0V",
+				"520": "52.0V",
+				"265": "26.5V",
+				"570": "57.0V",
+				"240": "24.0V",
+				"500": "50.0V",
+				"290": "29.0V",
+				"245": "24.5V",
+				"550": "55.0V",
+				"490": "49.0V",
+				"270": "27.0V",
+				"530": "53.0V"
+			},
+			"zh_cn": {
+				"275": "27.5V",
+				"580": "58.0V",
+				"250": "25.0V",
+				"510": "51.0V",
+				"255": "25.5V",
+				"560": "56.0V",
+				"600": "60.0V",
+				"0": "电池需进入浮充",
+				"280": "28.0V",
+				"540": "54.0V",
+				"285": "28.5V",
+				"480": "48.0V",
+				"590": "59.0V",
+				"260": "26.0V",
+				"520": "52.0V",
+				"265": "26.5V",
+				"570": "57.0V",
+				"240": "24.0V",
+				"500": "50.0V",
+				"290": "29.0V",
+				"245": "24.5V",
+				"550": "55.0V",
+				"490": "49.0V",
+				"270": "27.0V",
+				"530": "53.0V"
+			},
+			"en_us":{
+				"275": "27.5V",
+				"580": "58.0V",
+				"250": "25.0V",
+				"510": "51.0V",
+				"255": "25.5V",
+				"560": "56.0V",
+				"600": "60.0V",
+				"0": "Battery fully charged",
+				"280": "28.0V",
+				"540": "54.0V",
+				"285": "28.5V",
+				"480": "48.0V",
+				"590": "59.0V",
+				"260": "26.0V",
+				"520": "52.0V",
+				"265": "26.5V",
+				"570": "57.0V",
+				"240": "24.0V",
+				"500": "50.0V",
+				"290": "29.0V",
+				"245": "24.5V",
+				"550": "55.0V",
+				"490": "49.0V",
+				"270": "27.0V",
+				"530": "53.0V"
+			}
+		},
+		"ErrorCode1": [{
+			"address": 0,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Fan locked",
+				"zh_cn": "风机故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 1,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Over Temperater",
+				"zh_cn": "过温故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 2,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery Voltage High",
+				"zh_cn": "电池过压故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 3,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery Voltage Low",
+				"zh_cn": "电池低压故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 4,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Output shorted",
+				"zh_cn": "逆变短路故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 5,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "INV Voltage Over",
+				"zh_cn": "逆变过压故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 6,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Over Load",
+				"zh_cn": "负载过载故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 7,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Bus Voltage Over",
+				"zh_cn": "母线过压故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 8,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Bus Soft Failed",
+				"zh_cn": "母线软起超时故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 9,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "PV Voltage High",
+				"zh_cn": "PV过压"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 10,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Over Current",
+				"zh_cn": "逆变过流故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 11,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Bus Voltage Under",
+				"zh_cn": "母线低压故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 12,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "INV Soft Failed",
+				"zh_cn": "逆变软起超时故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 13,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "DC Voltage Over",
+				"zh_cn": "逆变直流分量故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 14,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "CT Fault",
+				"zh_cn": "CT检测故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 15,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "INV Voltage Low",
+				"zh_cn": "逆变欠压故障"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				},
+				"zh_cn": {
+					"0": "正常",
+					"1": "故障"
+				}
+			},
+			"scale": 1
+		}]
+	},
+	"Configuration": {
+		"devAddrs": ["5"],
+		"SystemSettingVC": [{
+			"title": {
+				"base": "System settings",
+				"zh_cn": "系统设置"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 12,
+				"funNumber": "3",
+				"startAddress": 5001
+			}, {
+				"canEdit": true,
+				"length": 18,
+				"funNumber": "3",
+				"startAddress": 5016
+			}]
+		}, {
+			"title": {
+				"base": "Time setting",
+				"zh_cn": "时间设置"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 6,
+				"funNumber": "3",
+				"startAddress": 6030
+			}]
+		}],
+		"writeMoreFunCode": 16,
+		"writeOneFunCode": 6,
+		"SystemInfoVC": [{
+			"title": {
+				"base": "System Info",
+				"zh_cn": "系统信息"
+			},
+			"segments": [{
+				"length": 14,
+				"startAddress": 4501,
+				"funNumber": "3"
+			}, {
+				"length": 12,
+				"startAddress": 4517,
+				"funNumber": "3"
+			}, {
+				"length": 18,
+				"startAddress": 4535,
+				"funNumber": "3"
+			}, {
+				"length": 4,
+				"startAddress": 4554,
+				"funNumber": "3"
+			}]
+		}, {
+			"title": {
+				"base": "Fault info",
+				"zh_cn": "故障信息"
+			},
+			"segments": [{
+				"length": 2,
+				"startAddress": 4529,
+				"funNumber": "3"
+			}]
+		}, {
+			"title": {
+				"base": "Other",
+				"zh_cn": "其他"
+			},
+			"segments": [{
+				"length": 4,
+				"startAddress": 4531,
+				"funNumber": "3"
+			}]
+		}],
+		"addressOffset": {
+			"offsetType": 0,
+			"offsetAddress": 0,
+			"offsetBase": 1
+		}
+	}
+}

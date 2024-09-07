@@ -1,0 +1,4345 @@
+{
+  "Root": [
+    {
+      "address": 0,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关机",
+          "1": "开机"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Main Switch",
+        "zh_cn": "系统总控制开关"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 1,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "1": "Advanced Mode",
+          "2": "Economic  Mode",
+          "3": "UPS Mode"
+        },
+        "zh_cn": {
+          "1": "高级模式",
+          "2": "经济效益模式",
+          "3": "不间断电源模式"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Working mode",
+        "zh_cn": "系统工作模式"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 2,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "display board",
+          "1": "control board",
+          "2": "communication board",
+          "0": "normal work"
+        },
+        "zh_cn": {
+          "3": "更新显示固件",
+          "1": "烧录控制板固件",
+          "2": "烧录通讯板固件",
+          "0": "正常工作"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Firmware Update Mode",
+        "zh_cn": "固件更新模式"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 3,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "50Hz",
+          "1": "60Hz"
+        },
+        "zh_cn": {
+          "0": "50Hz",
+          "1": "60Hz"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Frequency",
+        "zh_cn": "频率设定"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 4,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Single Phase",
+          "1": "Double Phase"
+        },
+        "zh_cn": {
+          "0": "单机模式",
+          "1": "双火线模式"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Mode",
+        "zh_cn": "机器类型选择"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 5,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "master",
+          "1": "slave 1"
+        },
+        "zh_cn": {
+          "0": "主机",
+          "1": "从机1"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Machine Address",
+        "zh_cn": "机器地址选择"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 6,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "AC",
+        "zh_cn": "逆变器开关"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 7,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "DC",
+        "zh_cn": "直流输出控制开关"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 8,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "PV Control",
+        "zh_cn": "PV控制开关"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 9,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Feed Switch",
+        "zh_cn": "馈电开关"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 10,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Grid Charging",
+        "zh_cn": "电网充电开关"
+      },
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 11,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Electricity Meter Enable Switch",
+        "zh_cn": "电表使能开关"
+      },
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 12,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Time settings",
+        "zh_cn": "时间控制开关"
+      },
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 13,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Max.PV Current",
+        "zh_cn": "PV最大充电电流"
+      },
+      "units": "A",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 14,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Low Power Settings",
+        "zh_cn": "系统低电量设定值"
+      },
+      "units": "%",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 15,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "High Power Settings",
+        "zh_cn": "系统高电量设定值"
+      },
+      "units": "%",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 16,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Max Charging Current",
+        "zh_cn": "系统最大充电电流"
+      },
+      "units": "A",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 17,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Max. Discharge Current ",
+        "zh_cn": "系统最大放电电流"
+      },
+      "units": "A",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 18,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Max. Charging Current of Grid",
+        "zh_cn": "电网最大充电电流"
+      },
+      "units": "A",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 19,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Max. Discharging Current Of Grid",
+        "zh_cn": "电网最大放电电流"
+      },
+      "units": "A",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 20,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Clear History Faults",
+        "zh_cn": "清除历史故障信息"
+      },
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 21,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "Off",
+          "1": "On"
+        },
+        "zh_cn": {
+          "0": "关闭",
+          "1": "开启"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Clear Power Generation Data",
+        "zh_cn": "清除发电量数据"
+      },
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 22,
+      "length": 2,
+      "spaceMark": ":",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Charge Start Time（Hout:Min）",
+        "zh_cn": "充电起始时间(时:分)"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 24,
+      "length": 2,
+      "spaceMark": ":",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Charge End Time（Hout:Min）",
+        "zh_cn": "充电结束时间(时:分)"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 26,
+      "length": 2,
+      "spaceMark": ":",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Discharge Start Time（Hout:Min）",
+        "zh_cn": "放电起始时间(时:分)"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 28,
+      "length": 2,
+      "spaceMark": ":",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Discharge End Time（Hout:Min）",
+        "zh_cn": "放电结束时间(时:分)"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 30,
+      "length": 3,
+      "valueType": 13,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "System Time",
+        "zh_cn": "系统时间"
+      },
+      "units": "",
+      "funNumber": "3",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 10,
+      "length": 2,
+      "byteSort": 2,
+      "valueType": 14,
+      "iconName": "",
+      "title": {
+        "base": "Device Model",
+        "zh_cn": "设备类型"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 12,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Communication Protocol Ver.",
+        "zh_cn": "通信协议版本"
+      },
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 13,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "25": "Gener is work on charging the battery.",
+          "18": "Charge is work on charging the battery and on load",
+          "10": "Charger and battery on load",
+          "26": "Generator is work on charging ther battery, And on load",
+          "19": "Charge is work on charging the battery and on load and on grid",
+          "11": "Charger and battery on grid",
+          "0": "Watting",
+          "12": "Charger and battery on grid and on load",
+          "1": "Stop",
+          "20": "Grid on load. Charger is work on charging the battery",
+          "2": "Fault",
+          "13": "Grid on load",
+          "3": "Self test",
+          "21": "Grid and Charger is work on charging the battery",
+          "14": "Grid work on charging the battery",
+          "4": "The battery on load",
+          "5": "The battery is Discharging to the grid",
+          "15": "Grid on load and Recharge the battery",
+          "22": "Grid and generator is work on charging the battery",
+          "6": "The battery is Discharging to the grid and on load",
+          "23": "Charger is work on charging the battery, Generator on load",
+          "16": "Charge is work on charging the battery",
+          "7": "Charger on load",
+          "8": "Charger on grid",
+          "24": "Generator on load",
+          "17": "Charge is work on charging the battery and on grid",
+          "9": "Charger on load and on grid"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "System Running Status",
+        "zh_cn": "储能系统运行状态"
+      },
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 14,
+      "length": 2,
+      "byteSort": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "S\/N",
+        "zh_cn": "设备序列号SN码"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 16,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Mcu1 Software Ver.",
+        "zh_cn": "mcu1 软件版本号"
+      },
+      "digits": 2,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 18,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Mcu2 Software Ver.",
+        "zh_cn": "mcu2 软件版本号"
+      },
+      "digits": 2,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 20,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Mcu3 Software Ver.",
+        "zh_cn": "mcu3 软件版本号"
+      },
+      "digits": 2,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 22,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Mcu4 Software Ver.",
+        "zh_cn": "mcu4 软件版本号"
+      },
+      "digits": 2,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 24,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV to Inverter Energy Line",
+        "zh_cn": "PV->Inverter 的能量线"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 26,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter to Battery Energy Line",
+        "zh_cn": "Inverter->Battery 的能量线"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 28,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": " Battery to Inverter Energy Line",
+        "zh_cn": "Battery->Inverter 的能量线"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 30,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter  to Load Energy Line",
+        "zh_cn": "Inverter->Load 的能量线"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 32,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter  to Grid Energy Line",
+        "zh_cn": "Inverter->Grid 的能量线"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 34,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid  to Inverter Energy Line",
+        "zh_cn": "Grid->Inverter 的能量线"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 36,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Generator to Inverter Energy Line",
+        "zh_cn": "Generator->Inverter 的能量线"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 38,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Battery Charging Status",
+        "zh_cn": "电池充电状态"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 40,
+      "length": 2,
+      "byteSort": "2",
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Battery Discharging Status",
+        "zh_cn": "电池放电状态"
+      },
+      "digits": 0,
+      "units": "",
+      "funNumber": "4",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 46,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "UPS Mode",
+          "1": "Advanced Mode",
+          "4": "TestMode",
+          "2": "Economic Mode",
+          "0": "default",
+          "5": "Off-Grid Mode"
+        },
+        "zh_cn": {
+          "3": "不间断电源模式",
+          "1": "高级模式",
+          "4": "测试模式",
+          "2": "经济效益模式",
+          "0": "缺省",
+          "5": "离网模式"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Inverter Working Mode",
+        "zh_cn": "逆变器工作模式"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 47,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Grid on load",
+          "1": "Off-grid operation",
+          "2": "Grid-connected charging",
+          "0": "Stop",
+          "5": "On-grid discharge"
+        },
+        "zh_cn": {
+          "3": "电网带载",
+          "1": "离网运行",
+          "2": "并网充电",
+          "0": "停止",
+          "5": "并网放电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Inverter Operating Status",
+        "zh_cn": "逆变器运行状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 48,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Voltage",
+        "zh_cn": "逆变输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 49,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Current",
+        "zh_cn": "逆变输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 50,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Power",
+        "zh_cn": "逆变输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 51,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Frequency",
+        "zh_cn": "逆变输出频率"
+      },
+      "units": "Hz",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 52,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Load Current",
+        "zh_cn": "负载电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 53,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Load Power",
+        "zh_cn": "负载功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 54,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Voltage",
+        "zh_cn": "电网电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 55,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid Current",
+        "zh_cn": "电网电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 56,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Power",
+        "zh_cn": "电网功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 57,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid Frequency",
+        "zh_cn": "电网频率"
+      },
+      "units": "Hz",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 58,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Charging status",
+        "zh_cn": "电网充电状态"
+      },
+      "enumerationStrings": {
+        "base": {
+          "0": "none",
+          "1": "charge",
+          "2": "discharge"
+        },
+        "zh_cn": {
+          "0": "无",
+          "1": "充电",
+          "2": "放电"
+        }
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 59,
+      "length": 2,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Power",
+        "zh_cn": "逆变总电量"
+      },
+      "units": "kWh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 61,
+      "length": 2,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Grid Power ",
+        "zh_cn": "电网总电量"
+      },
+      "units": "kWh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 63,
+      "length": 2,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Load Power",
+        "zh_cn": "负载总电量"
+      },
+      "units": "kWh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 65,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Generator Voltage",
+        "zh_cn": "发电机输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 66,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "DC13V Output Voltage",
+        "zh_cn": "DC13V输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 67,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "DC13V Total Output Current",
+        "zh_cn": "DC13V输出总电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 68,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "DC13V Total Output Power",
+        "zh_cn": "DC13V输出总功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 69,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Alarm Info. 1",
+        "zh_cn": "告警信息1"
+      },
+      "subModels": "alarmMessage1",
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 73,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Fault Info. 1",
+        "zh_cn": "故障信息1"
+      },
+      "subModels": "faultMessage1",
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 74,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Fault Info. 2",
+        "zh_cn": "故障信息2"
+      },
+      "subModels": "faultMessage2",
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 75,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Fault Info. 3",
+        "zh_cn": "故障信息3"
+      },
+      "subModels": "faultMessage3",
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 77,
+      "length": 1,
+      "valueType": 1,
+      "offset": -41,
+      "iconName": "",
+      "title": {
+        "base": "Temperature 1",
+        "zh_cn": "温度1"
+      },
+      "digits": 0,
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 78,
+      "length": 1,
+      "valueType": 1,
+      "offset": -41,
+      "iconName": "",
+      "title": {
+        "base": "Temperature 2",
+        "zh_cn": "温度2"
+      },
+      "digits": 0,
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 79,
+      "length": 1,
+      "valueType": 1,
+      "offset": -41,
+      "iconName": "",
+      "title": {
+        "base": "Temperature 3",
+        "zh_cn": "温度3"
+      },
+      "digits": 0,
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 80,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Grid on load",
+          "1": "Off-grid operation",
+          "2": "Grid-connected charging",
+          "0": "stop",
+          "5": "On-grid discharge"
+        },
+        "zh_cn": {
+          "3": "电网带载",
+          "1": "离网运行",
+          "2": "并网充电",
+          "0": "停止",
+          "5": "并网放电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Inverter Operating Status（L1）",
+        "zh_cn": "L1逆变器运行状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 81,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Voltage（L1）",
+        "zh_cn": "L1逆变输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 82,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Current（L1）",
+        "zh_cn": "L1逆变输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 83,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Power（L1）",
+        "zh_cn": "L1逆变输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 84,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Load Current（L1）",
+        "zh_cn": "L1负载电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 85,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Goad Power（L1）",
+        "zh_cn": "L1负载功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 86,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Voltage（L1）",
+        "zh_cn": "L1电网电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 87,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Current（L1）",
+        "zh_cn": "L1电网电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 88,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Power（L1）",
+        "zh_cn": "L1电网功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 89,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Grid on load",
+          "1": "Off-grid operation",
+          "2": "Grid-connected charging",
+          "0": "stop",
+          "5": "On-grid discharge"
+        },
+        "zh_cn": {
+          "3": "电网带载",
+          "1": "离网运行",
+          "2": "并网充电",
+          "0": "停止",
+          "5": "并网放电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Inverter Operating Status（L2）",
+        "zh_cn": "L2逆变器运行状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 90,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Voltage（L2）",
+        "zh_cn": "L2逆变输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 91,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Current（L2）",
+        "zh_cn": "L2逆变输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 92,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Power（L2）",
+        "zh_cn": "L2逆变输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 93,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Load Current（L2）",
+        "zh_cn": "L2负载电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 94,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Load Power（L2）",
+        "zh_cn": "L2负载功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 95,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Voltage（L2）",
+        "zh_cn": "L2电网电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 96,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Current（L2）",
+        "zh_cn": "L2电网电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 97,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Power（L2）",
+        "zh_cn": "L2电网功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 98,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Grid on load",
+          "1": "Off-grid operation",
+          "2": "Grid-connected charging",
+          "0": "stop",
+          "5": "On-grid discharge"
+        },
+        "zh_cn": {
+          "3": "电网带载",
+          "1": "离网运行",
+          "2": "并网充电",
+          "0": "停止",
+          "5": "并网放电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Inverter Operating Status（L3）",
+        "zh_cn": "L3逆变器运行状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 99,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Voltage（L3）",
+        "zh_cn": "L3逆变输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 100,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Current（L3）",
+        "zh_cn": "L3逆变输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 101,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Inverter Output Power（L3）",
+        "zh_cn": "L3逆变输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 102,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Load Current（L3）",
+        "zh_cn": "L3负载电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 103,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Load Power（L3）",
+        "zh_cn": "L3负载功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 104,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Voltage（L3）",
+        "zh_cn": "L3电网电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 105,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Current（L3）",
+        "zh_cn": "L3电网电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 106,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Grid Power（L3）",
+        "zh_cn": "L3电网功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 111,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Voltage",
+        "zh_cn": "PV电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 112,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Charging Power",
+        "zh_cn": "PV充电功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 113,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charging Current",
+        "zh_cn": "PV充电电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 114,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Output Voltage",
+        "zh_cn": "PV输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 115,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Charging Status",
+        "zh_cn": "充电状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 116,
+      "length": 2,
+      "byteSort": 2,
+      "valueType": 1,
+      "iconName": "",
+      "title": {
+        "base": "Total PV Power Generated",
+        "zh_cn": "PV累计发电量"
+      },
+      "digits": 1,
+      "units": "kWh",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 118,
+      "length": 1,
+      "valueType": 1,
+      "offset": -40,
+      "iconName": "",
+      "title": {
+        "base": "PV Temperature",
+        "zh_cn": "PV温度"
+      },
+      "digits": 0,
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 119,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Total Number Of PV Chargers",
+        "zh_cn": "PV充电器总路数"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 120,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Standby",
+          "1": "Quick charge",
+          "4": "Constant voltage charge",
+          "0": "Stop",
+          "5": "Initial charge"
+        },
+        "zh_cn": {
+          "3": "静止待机",
+          "1": "快速充电",
+          "4": "恒压充电",
+          "0": "停止",
+          "5": "初始化充电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Charger Working Status Display（CG1）",
+        "zh_cn": "CG1充电器工作状态显示"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 121,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Input Voltage（CG1）",
+        "zh_cn": "CG1PV输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 122,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Voltage（CG1）",
+        "zh_cn": "CG1PV充电器输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 123,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Current（CG1）",
+        "zh_cn": "CG1PV充电器输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 124,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Power（CG1）",
+        "zh_cn": "CG1PV充电器输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 125,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Alarm Info.（CG1）",
+        "zh_cn": "CG1告警信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 126,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Fault Info.（CG1）",
+        "zh_cn": "CG1故障信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 127,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Standby",
+          "1": "Quick charge",
+          "4": "Constant voltage charge",
+          "0": "Stop",
+          "5": "Initial charge"
+        },
+        "zh_cn": {
+          "3": "静止待机",
+          "1": "快速充电",
+          "4": "恒压充电",
+          "0": "停止",
+          "5": "初始化充电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Charger Working Status Display(CG2)",
+        "zh_cn": "CG2充电器工作状态显示"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 128,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Input Voltage (CG2)",
+        "zh_cn": "CG2PV输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 129,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Voltage(CG2)",
+        "zh_cn": "CG2PV充电器输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 130,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Current(CG2)",
+        "zh_cn": "CG2PV充电器输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 131,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Power(CG2)",
+        "zh_cn": "CG2PV充电器输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 132,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Alarm Info.(CG2)",
+        "zh_cn": "CG2告警信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 133,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Fault Info.(CG2)",
+        "zh_cn": "CG2故障信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 134,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Standby",
+          "1": "Quick charge",
+          "4": "Constant voltage charge",
+          "0": "Stop",
+          "5": "Initial charge"
+        },
+        "zh_cn": {
+          "3": "静止待机",
+          "1": "快速充电",
+          "4": "恒压充电",
+          "0": "停止",
+          "5": "初始化充电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Charger Working Status Display(CG3)",
+        "zh_cn": "CG3充电器工作状态显示"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 135,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Input Voltage(CG3)",
+        "zh_cn": "CG3PV输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 136,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Voltage(CG3)",
+        "zh_cn": "CG3PV充电器输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 137,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Current(CG3)",
+        "zh_cn": "CG3PV充电器输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 138,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Power(CG3)",
+        "zh_cn": "CG3PV充电器输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 139,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Alarm Info.(CG3)",
+        "zh_cn": "CG3告警信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 140,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Fault Info.(CG3)",
+        "zh_cn": "CG3故障信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 141,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "3": "Standby",
+          "1": "Quick charge",
+          "4": "Constant voltage charge",
+          "0": "Stop",
+          "5": "Initial charge"
+        },
+        "zh_cn": {
+          "3": "静止待机",
+          "1": "快速充电",
+          "4": "恒压充电",
+          "0": "停止",
+          "5": "初始化充电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "Charger Working Status Display(CG4)",
+        "zh_cn": "CG4充电器工作状态显示"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 142,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Input Voltage(CG4)",
+        "zh_cn": "CG4PV输入电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 143,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Voltage(CG4)",
+        "zh_cn": "CG4PV充电器输出电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 144,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Current(CG4)",
+        "zh_cn": "CG4PV充电器输出电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 145,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "PV Charger Output Power(CG4)",
+        "zh_cn": "CG4PV充电器输出功率"
+      },
+      "units": "W",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 146,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Alarm Info.(CG4)",
+        "zh_cn": "CG4告警信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 147,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Fault Info.(CG4)",
+        "zh_cn": "CG4故障信息"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 151,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "initialization",
+          "1": "normal working",
+          "2": "stop"
+        },
+        "zh_cn": {
+          "0": "初始化",
+          "1": "正常工作",
+          "2": "停止"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "BMS Status",
+        "zh_cn": "BMS系统状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 152,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "BMS Total Voltage",
+        "zh_cn": "总电压"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 153,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "BMS Total Current",
+        "zh_cn": "总电流"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 154,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Battery SOC",
+        "zh_cn": "电池电量SOC"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 155,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Battery SOH",
+        "zh_cn": "电池健康系数SOH"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 156,
+      "valueType": 1,
+      "digits": 0,
+      "enumerationStrings": {
+        "base": {
+          "0": "none",
+          "1": "charge",
+          "2": "discharge"
+        },
+        "zh_cn": {
+          "0": "无",
+          "1": "充电",
+          "2": "放电"
+        }
+      },
+      "iconName": "",
+      "title": {
+        "base": "BMS Running Status",
+        "zh_cn": "充放电状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 157,
+      "length": 1,
+      "valueType": 1,
+      "offset": -40,
+      "iconName": "",
+      "title": {
+        "base": "Battery Temperature",
+        "zh_cn": "电池温度"
+      },
+      "digits": 0,
+      "units": "°C",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 158,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Total Number Of Battery Packs",
+        "zh_cn": "总电池组个数"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 159,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Charging Current Limit",
+        "zh_cn": "充电电流限值"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 160,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Charging Voltage Limit",
+        "zh_cn": "充电电压限值"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 161,
+      "length": 1,
+      "valueType": 1,
+      "digits": 1,
+      "iconName": "",
+      "title": {
+        "base": "Discharge Current Limit",
+        "zh_cn": "放电电流限值"
+      },
+      "units": "A",
+      "subTitle": "--",
+      "scale": 0.1
+    },
+    {
+      "address": 162,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Battery Pack Index Number",
+        "zh_cn": "电池组索引号"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 163,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Current BMS SOC",
+        "zh_cn": "当前电池组SOC"
+      },
+      "units": "%",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 164,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Current BMS Status",
+        "zh_cn": "当前电池组状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 165,
+      "length": 1,
+      "valueType": 1,
+      "digits": 0,
+      "iconName": "",
+      "title": {
+        "base": "Current BMS Fault Status",
+        "zh_cn": "当前电池组故障状态"
+      },
+      "units": "",
+      "subTitle": "--",
+      "scale": 1
+    },
+    {
+      "address": 166,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 1",
+        "zh_cn": "单节电压1"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 167,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 2",
+        "zh_cn": "单节电压2"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 168,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 3",
+        "zh_cn": "单节电压3"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 169,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 4",
+        "zh_cn": "单节电压4"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 170,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 5",
+        "zh_cn": "单节电压5"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 171,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 6",
+        "zh_cn": "单节电压6"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 172,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 7",
+        "zh_cn": "单节电压7"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 173,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 8",
+        "zh_cn": "单节电压8"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 174,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 9",
+        "zh_cn": "单节电压9"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 175,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 10",
+        "zh_cn": "单节电压10"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 176,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 11",
+        "zh_cn": "单节电压11"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 177,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 12",
+        "zh_cn": "单节电压12"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 178,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 13",
+        "zh_cn": "单节电压13"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 179,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 14",
+        "zh_cn": "单节电压14"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 180,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 15",
+        "zh_cn": "单节电压15"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    },
+    {
+      "address": 181,
+      "length": 1,
+      "valueType": 1,
+      "digits": 2,
+      "iconName": "",
+      "title": {
+        "base": "Single Voltage 16",
+        "zh_cn": "单节电压16"
+      },
+      "units": "V",
+      "subTitle": "--",
+      "scale": 0.01
+    }
+  ],
+  "OtherCodes": {
+    "devtype": [
+      {
+        "address": 8,
+        "length": 8,
+        "valueType": 1,
+        "digits": 1,
+        "iconName": "",
+        "title": {
+          "base": "Power rating",
+          "zh_cn": "功率等级"
+        },
+        "units": "kW",
+        "subTitle": "--",
+        "scale": 0.1
+      },
+      {
+        "address": 0,
+        "length": 8,
+        "valueType": 1,
+        "digits": 1,
+        "iconName": "",
+        "title": {
+          "base": "Battery capacity",
+          "zh_cn": "电池容量"
+        },
+        "units": "kWh",
+        "subTitle": "--",
+        "scale": 0.1
+      }
+    ],
+    "faultMessage3": [
+      {
+        "address": 0,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Charging Temperature High",
+          "zh_cn": "充电过温保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Discharging Temperature High",
+          "zh_cn": "放电过温保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Charging Temperature Low",
+          "zh_cn": "充电低温保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Discharge Temperature Low",
+          "zh_cn": "放电低温保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Total Battery Voltage High",
+          "zh_cn": "总电池过压保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Total Battery Voltage Low",
+          "zh_cn": "总电池欠压保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Single Battery Voltage High",
+          "zh_cn": "单体过压保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Single Battery Voltage Low",
+          "zh_cn": "单体欠压保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Overcurrent Protection 1",
+          "zh_cn": "过流保护1"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Overcurrent Protection 2",
+          "zh_cn": "过流保护2"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Overcurrent Protection 3",
+          "zh_cn": "过流保护3"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Overcurrent Protection 4",
+          "zh_cn": "过流保护4"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 12,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Precharge Failure",
+          "zh_cn": "预充故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 13,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Short Circuit Protection",
+          "zh_cn": "短路保护"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      }
+    ],
+    "faultMessage1": [
+      {
+        "address": 0,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Inverter Over Load",
+          "zh_cn": "逆变器过载"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Inverter Overheated",
+          "zh_cn": "逆变器过热"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Battery Over Voltage",
+          "zh_cn": "电池电压过高"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Battery Low Voltage",
+          "zh_cn": "电池电压过低"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Inverter Output Error",
+          "zh_cn": "逆变输出故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "BMS Communication Error",
+          "zh_cn": "电池组通讯故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Voltage Sensor Error",
+          "zh_cn": "电压传感器失效"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Current Sampling Sensor Error",
+          "zh_cn": "电流采样传感器失效"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Trans Temperature High",
+          "zh_cn": "变压器温度过高"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Controller Temperature High",
+          "zh_cn": "控制器温度过高"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Device Temperature High",
+          "zh_cn": "环境温度过高"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Battery Pack Error",
+          "zh_cn": "电池组故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 12,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Battery Disconnected",
+          "zh_cn": "电池组通信失败"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 13,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Fan Error",
+          "zh_cn": "风扇故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 14,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Main Relay Failure",
+          "zh_cn": "主继电器失效"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 15,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Grid Relay Failure",
+          "zh_cn": "电网继电器失效"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      }
+    ],
+    "alarmMessage1": [
+      {
+        "address": 0,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Grid Voltage High",
+          "zh_cn": "电网电压过高"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Grid Voltage Low",
+          "zh_cn": "电网电压过低"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Grid Frequency High",
+          "zh_cn": "电网频率过高"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Grid Frequency Low",
+          "zh_cn": "电网频率过低"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Grid Oscillation",
+          "zh_cn": "电网振荡"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Meter Communication Error",
+          "zh_cn": "电表通信错误"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "PV Voltage High",
+          "zh_cn": "pv电压过高"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "PV Voltage Low",
+          "zh_cn": "pv电压过低"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Warning"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "告警"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Generator Voltage Abnormal",
+          "zh_cn": "发电机电压异常"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      }
+    ],
+    "faultMessage2": [
+      {
+        "address": 0,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "AC Charger Overload",
+          "zh_cn": "充电器过载"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 1,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "AC Charger Error",
+          "zh_cn": "充电器故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 2,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Second AC Charger Error",
+          "zh_cn": "第二充电器故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 3,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Multi-Host Error",
+          "zh_cn": "多主机错误"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 4,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Break Phase Error",
+          "zh_cn": "缺相"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 5,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Multi Communication Error",
+          "zh_cn": "多机通信异常"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 6,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Multi Synchronization Error",
+          "zh_cn": "多机同步异常"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 7,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Multi Configuration Error",
+          "zh_cn": "多机配置异常"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 8,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "DC Output Over Voltage",
+          "zh_cn": "DC输出过压"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 9,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "DC Output Over Current",
+          "zh_cn": "DC输出过流"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 10,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "DC Output Fail",
+          "zh_cn": "DC输出故障"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 11,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Calibration Fail",
+          "zh_cn": "零点采样异常"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 12,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Leakage Current Detecting Fail",
+          "zh_cn": "漏电流检测失效"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      },
+      {
+        "address": 13,
+        "valueType": 1,
+        "digits": 0,
+        "enumerationStrings": {
+          "base": {
+            "0": "Normal",
+            "1": "Fault"
+          },
+          "zh_cn": {
+            "0": "正常",
+            "1": "故障"
+          }
+        },
+        "iconName": "",
+        "title": {
+          "base": "Insulation Detecting Fail",
+          "zh_cn": "绝缘检测失效"
+        },
+        "units": "",
+        "subTitle": "--",
+        "scale": 1
+      }
+    ]
+  },
+  "Configuration": {
+    "addressOffset": {
+      "offsetBase": 1,
+      "offsetType": 0,
+      "offsetAddress": 0
+    },
+    "SystemInfoVC": [
+      {
+        "title": {
+          "base": "System data",
+          "zh_cn": "系统数据"
+        },
+        "segments": [
+          {
+            "canEdit": false,
+            "length": 2,
+            "funNumber": "4",
+            "startAddress": 10
+          },
+          {
+            "canEdit": false,
+            "length": 4,
+            "funNumber": "4",
+            "startAddress": 14
+          }
+        ]
+      },
+      {
+        "title": {
+          "base": "Inverter data",
+          "zh_cn": "逆变器数据"
+        },
+        "segments": [
+          {
+            "canEdit": false,
+            "length": 13,
+            "funNumber": "4",
+            "startAddress": 46
+          },
+          {
+            "canEdit": false,
+            "length": 5,
+            "funNumber": "4",
+            "startAddress": 65
+          },
+          {
+            "canEdit": false,
+            "length": 3,
+            "funNumber": "4",
+            "startAddress": 73
+          }
+        ]
+      },
+      {
+        "title": {
+          "base": "PV data",
+          "zh_cn": "光伏数据"
+        },
+        "segments": [
+          {
+            "canEdit": false,
+            "length": 3,
+            "funNumber": "4",
+            "startAddress": 111
+          },
+          {
+            "canEdit": false,
+            "length": 1,
+            "funNumber": "4",
+            "startAddress": 116
+          }
+        ]
+      },
+      {
+        "title": {
+          "base": "Battery data",
+          "zh_cn": "电池数据"
+        },
+        "segments": [
+          {
+            "canEdit": false,
+            "length": 4,
+            "funNumber": "4",
+            "startAddress": 151
+          },
+          {
+            "canEdit": false,
+            "length": 2,
+            "funNumber": "4",
+            "startAddress": 156
+          },
+          {
+            "canEdit": false,
+            "length": 16,
+            "funNumber": "4",
+            "startAddress": 166
+          }
+        ]
+      }
+    ],
+    "writeMoreFunCode": 16,
+    "SystemFlowVC": [
+      {
+        "title": {
+          "base": "pv",
+          "zh_cn": "光伏详情"
+        },
+        "segments": [
+          {
+            "canEdit": false,
+            "length": 3,
+            "funNumber": "4",
+            "startAddress": 111
+          }
+        ]
+      }
+    ],
+    "SystemSettingVC": [
+      {
+        "title": {
+          "base": "Control switch",
+          "zh_cn": "控制开关"
+        },
+        "segments": [
+          {
+            "canEdit": true,
+            "length": 1,
+            "funNumber": "3",
+            "startAddress": 1
+          },
+          {
+            "canEdit": true,
+            "length": 4,
+            "funNumber": "3",
+            "startAddress": 4
+          },
+          {
+            "canEdit": true,
+            "length": 1,
+            "funNumber": "3",
+            "startAddress": 10
+          },
+          {
+            "canEdit": true,
+            "length": 1,
+            "funNumber": "3",
+            "startAddress": 12
+          },
+          {
+            "canEdit": true,
+            "length": 2,
+            "funNumber": "3",
+            "startAddress": 14
+          },
+          {
+            "canEdit": true,
+            "length": 1,
+            "funNumber": "3",
+            "startAddress": 18
+          },
+          {
+            "canEdit": true,
+            "length": 7,
+            "funNumber": "3",
+            "startAddress": 20
+          }
+        ]
+      }
+    ],
+    "FlowInfoVC": {
+      "flows": {
+        "inverter_to_grid": [
+          {
+            "startAddress": 32,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "pv_to_inverter": [
+          {
+            "startAddress": 24,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "battery_status": [
+          {
+            "startAddress": 38,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "inverter_to_battery": [
+          {
+            "startAddress": 26,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "inverter_to_load": [
+          {
+            "startAddress": 30,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "generator_to_inverter": [
+          {
+            "startAddress": 36,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "grid_to_inverter": [
+          {
+            "startAddress": 34,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "battery_to_inverter": [
+          {
+            "startAddress": 28,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "battery_discharge_status": [
+          {
+            "startAddress": 40,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ]
+      },
+      "noteValues": {
+        "pv": [
+          {
+            "startAddress": 112,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "load": [
+          {
+            "startAddress": 53,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "grid": [
+          {
+            "startAddress": 56,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "battery": [
+          {
+            "startAddress": 154,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ]
+      },
+      "controls": [
+        {
+          "startAddress": 6,
+          "length": 2,
+          "funNumber": "3"
+        }
+      ],
+      "infos": {
+        "pv": [
+          {
+            "startAddress": 111,
+            "length": 3,
+            "funNumber": "4"
+          }
+        ],
+        "system": [
+          {
+            "startAddress": 10,
+            "length": 1,
+            "funNumber": "4"
+          },
+          {
+            "startAddress": 46,
+            "length": 2,
+            "funNumber": "4"
+          },
+          {
+            "startAddress": 49,
+            "length": 1,
+            "funNumber": "4"
+          },
+          {
+            "startAddress": 51,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "load": [
+          {
+            "startAddress": 48,
+            "length": 1,
+            "funNumber": "4"
+          },
+          {
+            "startAddress": 50,
+            "length": 1,
+            "funNumber": "4"
+          },
+          {
+            "startAddress": 66,
+            "length": 2,
+            "funNumber": "4"
+          }
+        ],
+        "grid": [
+          {
+            "startAddress": 54,
+            "length": 2,
+            "funNumber": "4"
+          },
+          {
+            "startAddress": 57,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ],
+        "battery": [
+          {
+            "startAddress": 151,
+            "length": 4,
+            "funNumber": "4"
+          },
+          {
+            "startAddress": 156,
+            "length": 1,
+            "funNumber": "4"
+          }
+        ]
+      }
+    },
+    "LoopCMDs": [
+      {
+        "startAddress": 0,
+        "length": 33,
+        "funNumber": "3"
+      },
+      {
+        "startAddress": 10,
+        "length": 97,
+        "funNumber": "4"
+      },
+      {
+        "startAddress": 111,
+        "length": 71,
+        "funNumber": "4"
+      }
+    ],
+    "writeOneFunCode": 6,
+    "devAddrs": [
+      "1"
+    ]
+  }
+}

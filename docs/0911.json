@@ -1,0 +1,5616 @@
+{
+	"Root": [{
+		"address": 30001,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV1 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30002,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV1 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30003,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV2 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30004,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV2 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30005,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "DC bus voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30006,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30007,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "AC voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30008,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "AC current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30009,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30010,
+		"digits": 2,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Power factor"
+		},
+		"rangeEnumerationStrings": {
+			"base": [{
+				"min": 0,
+				"value": "lagging",
+				"eqmax": true,
+				"max": 1,
+				"eqmin": false
+			}, {
+				"min": 1,
+				"value": "leading",
+				"eqmax": false,
+				"max": 2,
+				"eqmin": false
+			}, {
+				"min": -1,
+				"value": "lagging",
+				"eqmax": false,
+				"max": 0,
+				"eqmin": true
+			}, {
+				"min": -2,
+				"value": "leading",
+				"eqmax": false,
+				"max": -1,
+				"eqmin": false
+			}]
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30011,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "inverter State"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "alarm",
+				"1": "waiting",
+				"4": "error",
+				"2": "running",
+				"0": "stop",
+				"5": "flash"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 30012,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Output active power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30013,
+		"digits": 0,
+		"subModels": "ErrorCode1",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Error Code1"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30014,
+		"digits": 0,
+		"subModels": "ErrorCode2",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Error Code2"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30015,
+		"digits": 0,
+		"subModels": "ErrorCode3",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ErrorCode3"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30016,
+		"digits": 0,
+		"subModels": "ErrorCode4",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ErrorCode4"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30017,
+		"digits": 0,
+		"subModels": "ErrorCode5",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ErrorCode5"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30019,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total PV energy"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30022,
+		"digits": 0,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total running time"
+		},
+		"units": "h",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30026,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Tbox"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30027,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Trad"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30028,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Idci"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30029,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Leakage current"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30030,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Riso1"
+		},
+		"units": "Mohm",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30031,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Riso2"
+		},
+		"units": "Mohm",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30032,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Riso3"
+		},
+		"units": "Mohm",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30033,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Riso4"
+		},
+		"units": "Mohm",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30034,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "AC voltage ARM"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30035,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Frequency ARM"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30036,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "leakage current ARM"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30037,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Idci ARM"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30038,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Count down time"
+		},
+		"units": "S",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30039,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Inverter type"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3000": "iPower HB3000",
+				"5000": "iPower HB5000"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 30040,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "DSP firmware version"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30041,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ARM firmware version"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30042,
+		"digits": 0,
+		"length": 6,
+		"valueType": 2,
+		"iconName": "",
+		"title": {
+			"base": "WIFI sn"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30201,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 Error code"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30202,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 AC voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30204,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 AC current1"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30204,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 AC frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30205,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 PV1 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30206,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 PV1 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30207,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 PV2 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30208,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 PV2 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30209,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 Leakage current"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30210,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record1 Idci"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30211,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record1 Radiator Temperature"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30212,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record1 Tbox"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30213,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 DC bus voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30214,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 AC voltage(ARM)"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30215,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 AC frequency(ARM)"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30216,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record1 Idci(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30217,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 Leakage current(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30218,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 year"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30219,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 month\/day"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30220,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record1 hour\/minute"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30221,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 Error code"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30222,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 AC voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30223,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 AC current1"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30224,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 AC frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30225,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 PV1 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30226,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 PV1 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30227,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 PV2 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30228,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 PV2 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30229,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 Leakage current"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30230,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record2 Idci"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30231,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record2 Radiator Temperature"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30232,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record2 Tbox"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30233,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 DC bus voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30234,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 AC voltage(ARM)"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30235,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 AC frequency(ARM)"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30236,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record2 Idci(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30237,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 Leakage current(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30238,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 year"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30239,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 month\/day"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30240,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record2 hour\/minute"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30241,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "  Record3Error code"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30242,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 AC voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30243,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 AC current1"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30244,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 AC frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30245,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 PV1 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30246,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 PV1 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30247,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 PV2 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30248,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 PV2 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30249,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 Leakage current"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30250,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record3 Idci"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30251,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record3 Radiator Temperature"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30252,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record3 Tbox"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30253,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 DC bus voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30254,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 AC voltage(ARM)"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30255,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 AC frequency(ARM)"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30256,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record3 Idci(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30257,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 Leakage current(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30258,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 year"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30259,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 month\/day"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30260,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record3 hour\/minute"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30261,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 Error code"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30262,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 AC voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30263,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 AC current1"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30264,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 AC frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30265,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 PV1 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30266,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 PV1 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30267,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 PV2 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30268,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 PV2 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 39269,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 Leakage current"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30270,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record4 Idci"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30271,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record4 Radiator Temperature"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30272,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record4 Tbox"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30273,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 DC bus voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30274,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 AC voltage(ARM)"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30275,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 AC frequency(ARM)"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30276,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 Idci(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30277,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 Leakage current(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30278,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 year"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30279,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 month\/day"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30280,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record4 hour\/minute"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30281,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 Error code"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30282,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 AC voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30283,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 AC current1"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30284,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 AC frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30285,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 PV1 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30286,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 PV1 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30287,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 PV2 voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30288,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 PV2 current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30289,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 Leakage current"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30290,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record5 Idci"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30291,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record5 Radiator Temperature"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30292,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record5 Tbox"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30293,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 DC bus voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30294,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 AC voltage(ARM)"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30295,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 AC frequency(ARM)"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 30296,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Record5 Idci(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30297,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 Leakage current(ARM)"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30298,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 year"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30299,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 month\/day"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 30300,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Record5 hour\/minute"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32001,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage of battery1"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32002,
+		"digits": 2,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Current of battery1"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 32003,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Temperature of battery1"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32004,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "SOC of battery1"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32005,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Status of iPower BB1"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32006,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Error of iPower BB1"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32007,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32008,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32009,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Radiator temperature"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32011,
+		"digits": 0,
+		"length": 6,
+		"valueType": 2,
+		"iconName": "",
+		"title": {
+			"base": "Sn"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32017,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Type of battery1"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32018,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Quantity of battery1"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32021,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage of battery2"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32022,
+		"digits": 2,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Current of battery2"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 32023,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Temperature of battery2"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32024,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "SOC of battery2"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32025,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Status of iPower BB2"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32026,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Error of iPower BB2"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32027,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32028,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32029,
+		"digits": 1,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Radiator temperature"
+		},
+		"units": "°C",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32031,
+		"digits": 0,
+		"length": 6,
+		"valueType": 2,
+		"iconName": "",
+		"title": {
+			"base": "Sn"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32037,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Type of battery2"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32038,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Quantity of battery2"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32101,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Quantity of BB"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32102,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Grid status"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32103,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Relay status"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32104,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "DRM0 status"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32105,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Inverter work mode"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32106,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Load active power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32107,
+		"digits": 0,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Grid active power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32108,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Apparent power"
+		},
+		"units": "VA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 32109,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of charge"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32111,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of discharge"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32113,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of loads"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32115,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of grid"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32117,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of smart load1"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32119,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of smart load2"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 32121,
+		"digits": 1,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of smart load3"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40001,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Hardware version"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40002,
+		"digits": 0,
+		"length": 6,
+		"valueType": 2,
+		"iconName": "",
+		"title": {
+			"base": "sn"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40008,
+		"digits": 2,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total PV energy"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40010,
+		"digits": 2,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total running time"
+		},
+		"units": "h",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40012,
+		"digits": 2,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of charge"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40014,
+		"digits": 2,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of discharge"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40018,
+		"digits": 2,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of grid"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40018,
+		"digits": 2,
+		"length": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total energy of loads"
+		},
+		"units": "kWh",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40101,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Select ON\/OFF function control source"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "no source",
+				"1": "by “40102”",
+				"2": "by EMS"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40102,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ON\/OFF register"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "OFF",
+				"1": "ON"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40103,
+		"digits": 0,
+		"subModels": "ControllerCode1",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Control Code"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40201,
+		"digits": 0,
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Rtc Second"
+		},
+		"bcdType": 2,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40202,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Rtc Hour Minute"
+		},
+        "bcdType": 0,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40203,
+		"digits": 0,
+		"spaceMark": "\/",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Rtc Month Day"
+		},
+        "bcdType": 0,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40204,
+		"digits": 0,
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Rtc Year"
+		},
+		"bcdType": 0,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40301,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Quantity of MPPT"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40302,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV1 Start Voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40303,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "PV2 Start Voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 30015,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Zero PV power to grid"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "PV power can feed to grid",
+				"1": "PV power can not feed to grid"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40401,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Standard code"
+		},
+		"units": "",
+		"enumerationStrings": "Enumeration1",
+		"scale": 1
+	}, {
+		"address": 40402,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "SPI Select"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "SPI1",
+				"1": "SPI2"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40403,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "U\/V stage 1"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40404,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "U\/V stage 2"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40405,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of U\/V stage 1"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40406,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of U\/V stage 2"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40407,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "O\/V stage 1"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40408,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "O\/V stage2"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40409,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of O\/V stage 1"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40410,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of  O\/V stage 2"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40411,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "U\/F stage 1"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40412,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "U\/F stage 2"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40413,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of U\/F stage 1"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40414,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of U\/F stage 2"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40415,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "O\/F stage 1"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40416,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "O\/F stage2"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40417,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of O\/F stage 1"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40418,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of O\/F stage 2"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40419,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "U\/F stage"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40420,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "O\/F stage"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40421,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of U\/F stage"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40422,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time of O\/F stage"
+		},
+		"units": "ms",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40423,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Average Voltage Protect Enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "Disable",
+				"1": "Enbale"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40424,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Average Voltage Protect Value"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40425,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Connecting Voltage High"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40426,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Connecting Voltage Low"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40427,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Connecting Frequency High"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40428,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Connecting Frequency Low"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40429,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "connect Time"
+		},
+		"units": "s",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40430,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "reconnect Time"
+		},
+		"units": "s",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40431,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Dci Limit"
+		},
+		"units": "mA",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40432,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Trip time DCI Limit"
+		},
+		"units": "mS",
+		"subTitle": "--",
+		"scale": 10
+	}, {
+		"address": 40501,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Active power reduction function enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "disable",
+				"1": "enable"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40502,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Active power reduction Controler"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "EMS",
+				"1": "fix value (parameter 40503)",
+				"2": "grid voltage",
+				"0": "Grid frequency"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40503,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Active power limit"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40504,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Active power reduction frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40505,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Active power reduction Rate (dP\/dF)"
+		},
+		"units": "Pf\/Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40506,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Active power back rate(dP\/dt)"
+		},
+		"units": "Pn%\/S",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40507,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Start power rise rate"
+		},
+		"units": "%Pn\/S",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40508,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Grid error reconnect Power rise rate"
+		},
+		"units": "%Pn\/S",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40509,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage start"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40510,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage end"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40511,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power end"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40512,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge Active power reduction enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "unable",
+				"1": "enable"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40513,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Start frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40514,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "End frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 40515,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power end"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40516,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "return frequency"
+		},
+		"units": "Hz",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40601,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Reactive power provision enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "disable",
+				"1": "enable"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40602,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Reactive power provision controler"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "Grid voltage",
+				"1": "fixed",
+				"4": "EMS",
+				"2": "Time",
+				"0": "Output Power"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 40603,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor register"
+		},
+		"rangeEnumerationStrings": {
+			"base": [{
+				"min": 0.8,
+				"value": "lagging",
+				"eqmax": false,
+				"max": 1,
+				"eqmin": false
+			}, {
+				"min": 1,
+				"value": "leading",
+				"eqmax": false,
+				"max": 1.2,
+				"eqmin": false
+			}]
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40604,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 1 (Output power)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40605,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output power 1"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40606,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 2 (Output power)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40607,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output power 2"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40608,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 3 (Output power)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40609,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output power 3"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40610,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 4 (Output power)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40611,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output power 4"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40612,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 5 (Output power)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40613,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output power 5"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40614,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 1 (time)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40615,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time 1"
+		},
+        "bcdType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40616,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 2 (time)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40617,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time 2"
+		},
+        "bcdType": 1,
+		"units": "",
+		"scale": 1
+	}, {
+		"address": 40618,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 3 (time)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40619,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time 3"
+		},
+        "bcdType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40620,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 4 (time)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40621,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time 4"
+		},
+        "bcdType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40622,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor5 (time)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40623,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time 5"
+		},
+        "bcdType": 1,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40624,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor6 (time)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40625,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 1(U)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40626,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage1"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40627,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 2(U)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40628,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage2"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40629,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 3(U)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40630,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage3"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40631,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 4(U)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40632,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage4"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40633,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor 5(U)"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 40634,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Voltage5"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40635,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Min active power Limit"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40636,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Grid voltage Limit enable"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 40637,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Start grid voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 40638,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Stop grid voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42001,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "iPower HB function select"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "PV inverter",
+				"1": "PCS"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42002,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "High voltage battery type"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "iPower BB 2500",
+				"1": "iPower BB 5000"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42003,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Quantity of iPower BB"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42004,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "UPS enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "disable",
+				"1": "enable"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42005,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42006,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Relay Function select"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42007,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "SOC1"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42008,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "SOC2"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42101,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Communication address"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 420102,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Type"
+		},
+		"rangeEnumerationStrings": {
+			"base": [{
+				"min": 0,
+				"value": "Acid",
+				"eqmax": true,
+				"max": 99,
+				"eqmin": true
+			}, {
+				"min": 100,
+				"value": "Li-ion",
+				"eqmax": true,
+				"max": 199,
+				"eqmin": true
+			}]
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42103,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Quantity"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42104,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total Ah"
+		},
+		"units": "Ah",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42105,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "DOD"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42106,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "discharge current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 42107,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "charge current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 42108,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Discharge End voltage1"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42109,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Discharge End voltage2"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42110,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Absorption voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42111,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Floating voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42112,
+		"digits": 2,
+		"valueType": 0,
+		"iconName": "",
+		"title": {
+			"base": "Temperature compensation"
+		},
+		"units": "V\/°C",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 42113,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Equalization voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42114,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Number of cycles"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42121,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Communication address"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42122,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Battery Type"
+		},
+		"rangeEnumerationStrings": {
+			"base": [{
+				"min": 0,
+				"value": "Acid",
+				"eqmax": true,
+				"max": 99,
+				"eqmin": true
+			}, {
+				"min": 100,
+				"value": "Li-ion",
+				"eqmax": true,
+				"max": 199,
+				"eqmin": true
+			}]
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42123,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Quantity"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42124,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Total Ah"
+		},
+		"units": "Ah",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42125,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "DOD"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42126,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "discharge current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 42127,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "charge current"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 42128,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Discharge End voltage1"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42129,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Discharge End voltage2"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42130,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Absorption voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42131,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Floating voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42132,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Temperature compensation"
+		},
+		"units": "V\/°C",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 42133,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Equalization voltage"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42134,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Number of cycles"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42201,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Work mode"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"7": "divided period",
+				"3": "divided period",
+				"4": "divided period",
+				"0": "fixed",
+				"5": "divided period",
+				"1": "by EMS",
+				"6": "divided period",
+				"2": "divided period"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42202,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time1"
+		},
+        "bcdType": 0,
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42203,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time2"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42204,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time3"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42205,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time4"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42206,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time5"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42207,
+		"digits": 0,
+		"spaceMark": ":",
+		"valueType": 3,
+		"iconName": "",
+		"title": {
+			"base": "Time5"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42208,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select1"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42209,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select2"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42210,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select3"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42211,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select 4"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42212,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select 5"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42213,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select 6"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42214,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select 7"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42215,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Charge\/discharge select"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "discharge only to load",
+				"1": "charge only from PV",
+				"4": "discharge",
+				"2": "charge",
+				"0": "auto",
+				"5": "bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42217,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "EMS communication time out"
+		},
+		"units": "s",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 42218,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "EMS communication time out dispose"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "stop",
+				"1": "charge",
+				"2": "discharge",
+				"0": " bypass"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42301,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "RS485 Master\/slaver select"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "slaver (with EMS)",
+				"1": "master (with meter)"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42302,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "HB RS485 address"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42303,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "RS485 Baud rate"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"3": "38400",
+				"1": "9600",
+				"2": "19200",
+				"0": "4800"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42304,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Meter type"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "DDSF1352",
+				"1": "DTSD1352"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 42305,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Meter address"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42401,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load1 control enable"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42402,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load1 rate power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42403,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load2 control enable"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42404,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load2 rate power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42405,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load3 control enable"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42406,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load3 rate power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42407,
+		"digits": 0,
+		"subModels": "LoadCode1",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Run\/stop command"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42408,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load1 realtime power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42409,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load2 realtime power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 42410,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Load3 realtime power"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 48001,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "On\/off enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "disable",
+				"1": "enable"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 48002,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power of battery"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 48002,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "On\/off grid command"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "on grid",
+				"1": "off grid"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 48004,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Max power of PV"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}, {
+		"address": 48005,
+		"digits": 3,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Power factor"
+		},
+		"rangeEnumerationStrings": {
+			"base": [{
+				"min": 0.8,
+				"value": "lagging",
+				"eqmax": true,
+				"max": 0.999,
+				"eqmin": true
+			}, {
+				"min": 1.001,
+				"value": "leading",
+				"eqmax": true,
+				"max": 1.2,
+				"eqmin": true
+			}]
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 0.001
+	}, {
+		"address": 49001,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vpv1_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49002,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vpv1_b"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49003,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Ipv1_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49004,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Ipv1_b"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 49005,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vpv2_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49006,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vpv2_b"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49007,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Ipv2_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49008,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Ipv2_b"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 49009,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vbus_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49010,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vbus_b"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49011,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vac_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49012,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Vac_b"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49013,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Iac_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49014,
+		"digits": 2,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Iac_b"
+		},
+		"units": "A",
+		"subTitle": "--",
+		"scale": 0.01
+	}, {
+		"address": 49015,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output power_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49016,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Output power _b"
+		},
+		"units": "W",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49017,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ARM_Vac_k"
+		},
+		"units": "%",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49018,
+		"digits": 1,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "ARM_Vac_b"
+		},
+		"units": "V",
+		"subTitle": "--",
+		"scale": 0.1
+	}, {
+		"address": 49019,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "DCI Protect Enbale"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "Disable",
+				"1": "Enbale"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 49020,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "GFCi Enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "GFCI Check OFF",
+				"1": "GFCI Check ON"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 49021,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "IsoCheck Enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "ISO Check OFF",
+				"1": "ISO Check OFF"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 49022,
+		"digits": 0,
+		"subTitle": "--",
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "Anti-islanding disturbances Enable"
+		},
+		"units": "",
+		"enumerationStrings": {
+			"base": {
+				"0": "Anti-islanding disturbances Off",
+				"1": "Anti-islanding disturbances On"
+			}
+		},
+		"scale": 1
+	}, {
+		"address": 49023,
+		"digits": 0,
+		"valueType": 1,
+		"iconName": "",
+		"title": {
+			"base": "DCI compensation"
+		},
+		"units": "",
+		"subTitle": "--",
+		"scale": 1
+	}],
+	"OtherCodes": {
+		"ErrorCode5": [],
+		"LoadCode1": [{
+			"address": 13,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Load3"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "stop",
+					"1": "run"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 14,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Load2"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "stop",
+					"1": "run"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 15,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Load1"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "stop",
+					"1": "run"
+				}
+			},
+			"scale": 1
+		}],
+		"Enumeration1": {
+			"base": {
+				"10": "ISLAND MODE",
+				"2": "VDE4105",
+				"15": "MEA",
+				"3": "G83",
+				"11": "CGC",
+				"16": "Brazil",
+				"4": "G59",
+				"12": "EN50438",
+				"5": "DK5940",
+				"6": "ETL-208",
+				"13": "CEI0-21",
+				"7": "ETL-240",
+				"0": "AS4777",
+				"8": "ETL-277",
+				"14": "PEA",
+				"1": "VDE0126",
+				"9": "IEC"
+			}
+		},
+		"ErrorCode4": [{
+			"address": 15,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Communication battery&BB"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 14,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery over voltage"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 13,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery under voltage"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 12,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery hot"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 11,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery over current"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 10,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery cell O\/V"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 9,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery cell U\/V"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 8,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Battery cell O\/C"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}],
+		"ErrorCode3": [{
+			"address": 15,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Communication HB&BB"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 14,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "iPower BB error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}],
+		"ControllerCode1": [{
+			"address": 0,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Reset error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "no effect",
+					"1": "Active"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 1,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Reload default parameters"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "no effect",
+					"1": "Active"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 14,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Start Auto Test"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "no effect",
+					"1": "Active"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 15,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Clear E-total and T-total and Error History"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "no effect",
+					"1": "Active"
+				}
+			},
+			"scale": 1
+		}],
+		"ErrorCode2": [{
+			"address": 15,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Leakage current"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 14,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "AC short current"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 13,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "DC Inject error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 12,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "AC Over current"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 11,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "DC bus Over voltage"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 10,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "PV1 Over voltage"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 9,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "PV2 over voltage"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 8,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Disconnect grid"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 7,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Frequency error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 6,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Grid voltage error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 5,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Auto test error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 4,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Hot error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 3,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "PV1 Low Isolation"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 2,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "PV2 Low Isolation"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 1,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "PV- Low Isolation"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 0,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Over load"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}],
+		"ErrorCode1": [{
+			"address": 15,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Not Consisten"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 14,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Leakage device"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 13,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "AC current sensor"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 12,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Frequency Device"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 11,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "time error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 10,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "EEPROM error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 9,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Refer Voltage"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 8,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Relay error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 7,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Boost error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 6,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "DSP-ARM com error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}, {
+			"address": 5,
+			"digits": 0,
+			"subTitle": "--",
+			"valueType": 1,
+			"iconName": "",
+			"title": {
+				"base": "Temperature sensor error"
+			},
+			"units": "",
+			"enumerationStrings": {
+				"base": {
+					"0": "normal",
+					"1": "fault"
+				}
+			},
+			"scale": 1
+		}]
+	},
+	"Configuration": {
+		"devAddrs": ["3"],
+		"SystemSettingVC": [{
+			"title": {
+				"base": "Control"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 2,
+				"funNumber": "3",
+				"startAddress": 40101
+			}]
+		}, {
+			"title": {
+				"base": "Inverter"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 3,
+				"funNumber": "3",
+				"startAddress": 40001
+			}]
+		}, {
+			"title": {
+				"base": "Date"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 4,
+				"funNumber": "3",
+				"startAddress": 40201
+			}]
+		}, {
+			"title": {
+				"base": "PV"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 4,
+				"funNumber": "3",
+				"startAddress": 40301
+			}]
+		}, {
+			"title": {
+				"base": "Standard"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 20,
+				"funNumber": "3",
+				"startAddress": 40401
+			}, {
+				"canEdit": true,
+				"length": 12,
+				"funNumber": "3",
+				"startAddress": 40421
+			}]
+		}, {
+			"title": {
+				"base": "ActivePower"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 16,
+				"funNumber": "3",
+				"startAddress": 40501
+			}]
+		}, {
+			"title": {
+				"base": "Reactive"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 29,
+				"funNumber": "3",
+				"startAddress": 40601
+			}, {
+				"canEdit": true,
+				"length": 9,
+				"funNumber": "3",
+				"startAddress": 40630
+			}]
+		}, {
+			"title": {
+				"base": "Storage"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 8,
+				"funNumber": "3",
+				"startAddress": 42001
+			}]
+		}, {
+			"title": {
+				"base": "IpowerBB"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 14,
+				"funNumber": "3",
+				"startAddress": 42101
+			}, {
+				"canEdit": true,
+				"length": 14,
+				"funNumber": "3",
+				"startAddress": 42121
+			}]
+		}, {
+			"title": {
+				"base": "StorageOn"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 18,
+				"funNumber": "3",
+				"startAddress": 42201
+			}]
+		}, {
+			"title": {
+				"base": "Communication"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 5,
+				"funNumber": "3",
+				"startAddress": 42301
+			}]
+		}, {
+			"title": {
+				"base": "SmartLoads"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 10,
+				"funNumber": "3",
+				"startAddress": 42401
+			}]
+		}, {
+			"title": {
+				"base": "EMS"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 5,
+				"funNumber": "3",
+				"startAddress": 48001
+			}]
+		}, {
+			"title": {
+				"base": "Factory"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 23,
+				"funNumber": "3",
+				"startAddress": 49001
+			}]
+		}, {
+			"title": {
+				"base": "Control2"
+			},
+			"segments": [{
+				"canEdit": true,
+				"length": 1,
+				"funNumber": "3",
+				"startAddress": 40103
+			}]
+		}],
+		"writeMoreFunCode": 16,
+		"writeOneFunCode": 6,
+		"SystemInfoVC": [{
+			"title": {
+				"base": "PVInverter"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 12,
+				"funNumber": "4",
+				"startAddress": 30001
+			}, {
+				"canEdit": false,
+				"length": 1,
+				"funNumber": "4",
+				"startAddress": 30019
+			}, {
+				"canEdit": false,
+				"length": 1,
+				"funNumber": "4",
+				"startAddress": 30022
+			}, {
+				"canEdit": false,
+				"length": 17,
+				"funNumber": "4",
+				"startAddress": 30026
+			}]
+		}, {
+			"title": {
+				"base": "iPowerBB"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 9,
+				"funNumber": "4",
+				"startAddress": 32001
+			}, {
+				"canEdit": false,
+				"length": 3,
+				"funNumber": "4",
+				"startAddress": 32011
+			}, {
+				"canEdit": false,
+				"length": 9,
+				"funNumber": "4",
+				"startAddress": 32021
+			}, {
+				"canEdit": false,
+				"length": 3,
+				"funNumber": "4",
+				"startAddress": 32031
+			}]
+		}, {
+			"title": {
+				"base": "System"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 15,
+				"funNumber": "4",
+				"startAddress": 32101
+			}]
+		}, {
+			"title": {
+				"base": "Warning"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 4,
+				"funNumber": "4",
+				"startAddress": 30013
+			}]
+		}, {
+			"title": {
+				"base": "Error1"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 20,
+				"funNumber": "4",
+				"startAddress": 30201
+			}]
+		}, {
+			"title": {
+				"base": "Error2"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 20,
+				"funNumber": "4",
+				"startAddress": 30221
+			}]
+		}, {
+			"title": {
+				"base": "Error3"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 20,
+				"funNumber": "4",
+				"startAddress": 30241
+			}]
+		}, {
+			"title": {
+				"base": "Error4"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 20,
+				"funNumber": "4",
+				"startAddress": 30261
+			}]
+		}, {
+			"title": {
+				"base": "Error5"
+			},
+			"segments": [{
+				"canEdit": false,
+				"length": 20,
+				"funNumber": "4",
+				"startAddress": 30281
+			}]
+		}],
+		"addressOffset": {
+			"offsetBase": 10000,
+			"offsetAddress": 1,
+            "offsetType": 1
+		}
+	}
+}
