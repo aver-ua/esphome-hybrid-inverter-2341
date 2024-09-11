@@ -642,6 +642,41 @@ sensor:
     lambda: |-
       return swapBytes(x);
 
+# something "Output Source Priority"/"Mains supply State" related...
+# 2 - when SUB, 7 - when SBU 
+  - platform: modbus_controller
+    modbus_controller_id: smg_inverter
+    name: "Register4554"
+    entity_category: diagnostic
+    address: 4554
+    register_type: holding
+    value_type: U_WORD
+    lambda: |-
+      return swapBytes(x);
+
+# something PV related... MPPT Controller State?
+# 10 11 13
+  - platform: modbus_controller
+    modbus_controller_id: smg_inverter
+    name: "Register4555"
+    entity_category: diagnostic
+    address: 4555
+    register_type: holding
+    value_type: U_WORD
+    lambda: |-
+      return swapBytes(x);
+
+# something PV related...
+  - platform: modbus_controller
+    modbus_controller_id: smg_inverter
+    name: "Register4556"
+    entity_category: diagnostic
+    address: 4556
+    register_type: holding
+    value_type: U_WORD
+    lambda: |-
+      return swapBytes(x);
+
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
     name: "PV Temperature"
@@ -1280,6 +1315,17 @@ text_sensor:
 #    bitmask: 1
 #    entity_category: config
 #    icon: "mdi:toggle-switch"
+#
+#  - platform: modbus_controller
+#    name: "Backlight"
+#    skip_updates: ${select_skip_updates}
+#    use_write_multiple: false
+#    register_type: holding
+#    address: 5004
+#    force_new_range: true
+#    bitmask: 1
+#    entity_category: config
+#    icon: "mdi:alarm-light"
 
 select:
 
