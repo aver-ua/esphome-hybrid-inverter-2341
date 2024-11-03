@@ -19,5 +19,7 @@ packages:
 
 #  changes for model POW-HVM4.2M-24V:
   pow-hvm4.2m-24v: !include modules/pow-hvm4.2m-24v.yaml
+#  changes for model POW-HVM6.2M-48V:
+#  pow-hvm6.2m-48v: !include modules/pow-hvm6.2m-48v.yaml
 #  changes for model POW-HVM10.2M-48V:
 #  pow-hvm10.2m-48v: !include modules/pow-hvm10.2m-48v.yaml
