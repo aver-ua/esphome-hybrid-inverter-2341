@@ -654,18 +654,6 @@ sensor:
     lambda: |-
       return swapBytes(x);
 
-# something PV related... MPPT Controller State?
-# 10 11 13
-  - platform: modbus_controller
-    modbus_controller_id: smg_inverter
-    name: "Register4555"
-    entity_category: diagnostic
-    address: 4555
-    register_type: holding
-    value_type: U_WORD
-    lambda: |-
-      return swapBytes(x);
-
 # something PV related...
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
@@ -1260,6 +1248,30 @@ text_sensor:
         case 1: return std::string("Normal");
         case 2: return std::string("Overload");
         default: return std::string(x);
+      }
+
+  - platform: modbus_controller
+    modbus_controller_id: smg_inverter
+    name: "Charger Status"
+    icon: mdi:ev-station
+    entity_category: diagnostic
+    address: 4555
+    register_type: holding
+    response_size: 2
+    raw_encode: HEXBYTES
+    lambda: |-
+      uint16_t sensorIndex = modbus_controller::word_from_hex_str(x, 0);
+      switch (sensorIndex) {
+        case 0x0a00:
+          return std::string("Off");
+        case 0x0c00:
+          return std::string("Charge");
+        case 0x0b00:
+          return std::string("Pre-Charge");
+        case 0x0d00:
+          return std::string("Floating");
+        default:
+          return std::string("Unknown State");
       }
 
   - platform: template
