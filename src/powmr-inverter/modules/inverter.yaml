@@ -642,8 +642,8 @@ sensor:
     lambda: |-
       return swapBytes(x);
 
-# something "Output Source Priority"/"Mains supply State" related...
-# 2 - when SUB, 7 - when SBU 
+# something "Working State"/"Mains supply State" related...
+# 2 - Line Mode, 7 - Invert Mode ... 
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
     name: "Register4554"
@@ -655,6 +655,7 @@ sensor:
       return swapBytes(x);
 
 # something PV related...
+# 0 - PV Undervoltage, 13 - PV Discharging, 11 - 
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
     name: "Register4556"
@@ -1429,6 +1430,44 @@ select:
       "On": 1
 
   - platform: modbus_controller
+    name: "Record fault code"
+    icon: mdi:folder-alert
+    optimistic: true
+    skip_updates: ${select_skip_updates}
+    entity_category: config
+    address: 5010
+    value_type: U_WORD
+    force_new_range: true
+    optionsmap:
+      "Off": 0
+      "On": 1
+
+  - platform: modbus_controller
+    name: "Battery Equalization"
+    icon: mdi:approximately-equal
+    optimistic: true
+    skip_updates: ${select_skip_updates}
+    entity_category: config
+    address: 5011
+    value_type: U_WORD
+    optionsmap:
+      "Off": 0
+      "On": 1
+
+  - platform: modbus_controller
+    name: "Battery Equalization activated immediately"
+    icon: mdi:battery-arrow-up
+    optimistic: true
+    skip_updates: ${select_skip_updates}
+    entity_category: config
+    address: 5012
+    value_type: U_WORD
+    force_new_range: true
+    optionsmap:
+      "Off": 0
+      "On": 1
+
+  - platform: modbus_controller
     id: charger_source_priority_select
     name: "Charger Source Priority"
     icon: mdi:battery-charging
@@ -1482,6 +1521,19 @@ select:
       "AGM": 0
       "Flooded": 1
       "User Defined": 2
+
+  - platform: modbus_controller
+    name: "Output Frequency"
+    icon: mdi:cosine-wave
+    optimistic: true
+    skip_updates: ${select_skip_updates}
+    entity_category: config
+    address: 5021
+    force_new_range: true
+    value_type: U_WORD
+    optionsmap:
+      "50Hz": 0
+      "60Hz": 1
 
   - platform: modbus_controller
     name: "Max Total Charge Current"
