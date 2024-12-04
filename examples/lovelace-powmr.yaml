@@ -1,0 +1,339 @@
+icon: mdi:solar-power-variant
+path: powmr
+title: PowMr Inverter
+type: sections
+max_columns: 2
+sections:
+  - type: grid
+    cards:
+      - type: custom:stack-in-card
+        cards:
+          - type: conditional
+            conditions:
+              - entity: sensor.powmr_inverter_load_state
+                state: unavailable
+            card:
+              type: markdown
+              content: |
+                <ha-alert alert-type="warning">Inverter is turned off</ha-alert>
+              style: |
+                ha-card {
+                  margin: 0px 0;
+                  border: 0;
+                }
+          - type: conditional
+            conditions:
+              - entity: sensor.powmr_inverter_load_state
+                state_not: unavailable
+            card:
+              type: vertical-stack
+              cards:
+                - type: custom:sunsynk-power-flow-card
+                  cardstyle: full
+                  show_solar: true
+                  show_battery: true
+                  show_grid: true
+                  panel_mode: false
+                  decimal_places: 3
+                  no_card: true
+                  card_mod:
+                    style: |
+                      ha-card {
+                        margin-top: -5px !important;
+                      }
+                      .card {
+                        box-shadow: none !important;
+                      }
+                  inverter:
+                    modern: false
+                    colour: gray
+                    autarky: power
+                    model: powmr
+                    tree_phase: false
+                    auto_scale: true
+                  battery:
+                    energy: 11520
+                    shutdown_soc: 5
+                    colour: "#9A64A0"
+                    show_daily: true
+                    invert_power: true
+                    show_absolute: true
+                  solar:
+                    show_daily: true
+                    maxpower: 2400
+                    pv1_name: Solar
+                    mppts: 1
+                    display_mode: 1
+                  load:
+                    show_daily: true
+                    auto_scale: true
+                  grid:
+                    grid_name: Utility Power
+                    show_daily_buy: false
+                    show_daily_sell: false
+                    show_nonessential: false
+                    grid_off_colour: "#aaaa"
+                  entities:
+                    inverter_voltage_154: sensor.powmr_inverter_load_voltage
+                    inverter_current_164: sensor.powmr_inverter_load_current
+                    inverter_power_175: sensor.powmr_inverter_load_power
+                    load_frequency_192: sensor.powmr_inverter_load_frequency
+                    grid_connected_status_194: binary_sensor.powmr_inverter_grid_active
+                    grid_ct_power_172: sensor.powmr_on_grid_power
+                    day_load_energy_84: sensor.powmr_inverter_load_power_energy_spent_daily
+                    battery_voltage_183: sensor.powmr_inverter_battery_voltage
+                    battery_soc_184: sensor.inverter_battery_soc
+                    battery_power_190: sensor.powmr_inverter_battery_power
+                    battery_current_191: sensor.powmr_inverter_battery_current
+                    battery_rated_capacity: 480
+                    pv1_power_186: sensor.powmr_inverter_pv_power
+                    pv1_voltage_109: sensor.powmr_inverter_pv_voltage
+                    pv1_current_110: sensor.powmr_inverter_pv_current
+                    day_pv_energy_108: sensor.powmr_inverter_pv_power_energy_spent_daily
+                    day_battery_charge_70: sensor.powmr_inverter_battery_daily_charge_energy
+                    day_battery_discharge_71: sensor.powmr_inverter_battery_daily_discharge_energy
+      - type: tile
+        entity: sensor.powmr_inverter_working_state
+        name: Mode
+        color: accent
+        icon: ""
+      - type: tile
+        entity: sensor.powmr_inverter_load_power_factor
+        name: Power Factor
+        icon: mdi:power-plug
+        color: teal
+  - type: grid
+    cards:
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.powmr_inverter_load_power
+            name: Inverter (W)
+          - entity: sensor.powmr_inverter_pv_power
+            name: Solar Panels
+          - entity: sensor.powmr_inverter_load_percent
+            name: Inverter (%)
+            y_axis: secondary
+        hours_to_show: 14
+        points_per_hour: 32
+        show:
+          labels: true
+          name: false
+          icon: false
+          extrema: true
+          labels_secondary: true
+        line_width: 2
+        animate: true
+      - type: tile
+        entity: sensor.powmr_inverter_mains_supply_state
+        color: purple
+        name: Mains supply State
+      - type: tile
+        entity: sensor.powmr_inverter_load_percent
+        name: Load
+      - type: tile
+        entity: sensor.powmr_inverter_load_current
+        name: Current
+        color: indigo
+  - type: grid
+    cards:
+      - type: heading
+        heading: Solar Panels
+        heading_style: subtitle
+        icon: mdi:solar-power-variant
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.powmr_inverter_pv_power
+            name: Power
+          - entity: sensor.powmr_inverter_pv_voltage
+            name: Voltage
+            y_axis: secondary
+        hours_to_show: 14
+        points_per_hour: 32
+        show:
+          labels: true
+          name: false
+          icon: false
+          extrema: true
+          labels_secondary: true
+        line_width: 2
+        animate: true
+      - type: tile
+        entity: sensor.powmr_inverter_pv_state
+        name: State
+        color: purple
+      - type: tile
+        entity: sensor.powmr_inverter_pv_temperature
+        icon: mdi:coolant-temperature
+        color: accent
+        name: Temperature
+  - type: grid
+    cards:
+      - type: heading
+        heading: Battery
+        heading_style: subtitle
+        icon: mdi:home-battery
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.powmr_inverter_battery_voltage
+            name: Voltage
+          - entity: sensor.powmr_inverter_battery_power
+            name: Power
+            y_axis: secondary
+        hours_to_show: 14
+        points_per_hour: 32
+        show:
+          labels: true
+          name: false
+          icon: false
+          extrema: true
+          labels_secondary: true
+        line_width: 2
+        animate: true
+      - type: tile
+        entity: sensor.powmr_inverter_battery_state
+        name: State
+        color: purple
+      - type: tile
+        entity: sensor.powmr_inverter_battery_current
+        name: Current
+  - type: grid
+    cards:
+      - type: heading
+        heading: Inverter configs
+        heading_style: subtitle
+        icon: mdi:application-cog
+      - type: tile
+        entity: select.powmr_inverter_output_voltage
+        name: Output Voltage
+        icon: mdi:home-export-outline
+        color: primary
+      - type: tile
+        entity: select.powmr_inverter_ac_input_voltage_range
+        name: Input Voltage
+        icon: mdi:home-import-outline
+      - type: tile
+        entity: select.powmr_inverter_output_source_priority
+        name: Output Priority
+        icon: mdi:export
+        color: lime
+      - type: tile
+        entity: select.powmr_inverter_charger_source_priority
+        name: Charger Priority
+        icon: mdi:battery-charging
+        color: purple
+      - type: tile
+        entity: select.powmr_inverter_restart_on_overheat
+        name: Restart On Overheat
+        icon: mdi:restart-alert
+        color: accent
+      - type: tile
+        entity: select.powmr_inverter_restart_on_overload
+        name: Restart On Overload
+        icon: mdi:restart
+        color: red
+      - type: tile
+        entity: select.powmr_inverter_buzzer_alarm
+        name: Buzzer
+        icon: mdi:speaker-wireless
+        color: brown
+      - type: tile
+        entity: select.powmr_inverter_backlight
+        name: Backlight
+        icon: mdi:alarm-light
+        color: light-blue
+      - type: tile
+        entity: select.powmr_inverter_return_to_default_display
+        icon: mdi:backburger
+        name: Return To Default Display
+        color: cyan
+      - type: tile
+        entity: select.powmr_inverter_beep_on_primary_source_fail
+        name: Beep On Primary Source Fail
+        color: blue-grey
+  - type: grid
+    cards:
+      - type: heading
+        heading: Inverter configs
+        heading_style: subtitle
+        icon: mdi:application-cog
+      - type: tile
+        entity: select.powmr_inverter_max_total_charge_current
+        name: Max Total Charge, A
+        icon: mdi:battery-charging-100
+      - type: tile
+        entity: select.powmr_inverter_utility_charge_current
+        name: Utility Charge, A
+        icon: mdi:transmission-tower-export
+        color: primary
+      - type: tile
+        entity: number.powmr_inverter_bulk_charging_voltage
+        name: Bulk Charging V
+        icon: mdi:battery-arrow-down
+        color: yellow
+      - type: tile
+        entity: number.powmr_inverter_floating_charging_voltage
+        name: Floating Charging V
+        icon: mdi:battery-sync-outline
+        color: green
+      - type: tile
+        entity: number.powmr_inverter_back_to_utility_source_voltage
+        name: Back to Utility V
+        icon: mdi:transmission-tower-import
+        color: red
+      - type: tile
+        entity: number.powmr_inverter_back_to_battery_source_voltage
+        name: Back to Battery V
+        color: light-green
+        icon: mdi:power-plug-battery
+      - type: tile
+        entity: number.powmr_inverter_low_dc_cut_off_voltage
+        name: Battery Low V
+        color: accent
+      - type: tile
+        entity: select.powmr_inverter_overload_bypass
+        name: OverLoad Bypass
+        icon: mdi:transit-skip
+        color: red
+badges:
+  - type: entity
+    show_name: true
+    show_state: true
+    show_icon: true
+    entity: sensor.powmr_inverter_uptime_hr
+    color: green
+    name: Uptime
+  - type: entity
+    entity: sensor.powmr_inverter_wifi_signal_percent
+    color: purple
+    name: WiFi
+    display_type: complete
+  - type: entity
+    show_name: true
+    show_state: true
+    show_icon: true
+    entity: sensor.powmr_inverter_load_state
+    name: Load
+    color: ""
+  - type: entity
+    show_name: true
+    show_state: true
+    show_icon: true
+    color: deep-orange
+    entity: sensor.powmr_inverter_charger_status
+    name: Charger
+    show_entity_picture: false
+  - type: entity
+    show_name: true
+    show_state: true
+    show_icon: true
+    entity: sensor.powmr_inverter_errors
+    color: pink
+    name: Errors
+  - type: entity
+    show_name: true
+    show_state: true
+    show_icon: true
+    entity: sensor.powmr_inverter_alarms
+    color: yellow
+    name: Alarms
+cards: []
