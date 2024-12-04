@@ -18,8 +18,8 @@ System Info [4501-4515,4517-4529,4535-4553], Fault [4529-4530], Other [4531-4534
 - 4518 : Main CPU version
 - 4519 : Secondary CPU version
 - 4520 : Battery Piece ["0": "no battery", "1": "24V（3KW）", "2": "48V（5KW)"]
-- 4521 : Nonimal output apparent power, VA
-- 4522 : Nonimal output active power, W
+- 4521 : Nominal output apparent power, VA
+- 4522 : Nominal output active power, W
 - 4523 : Nominal AC voltage, V
 - 4524 : Nominal AC current, A
 - 4525 : Rated battery voltage, V, scale: 0.1
