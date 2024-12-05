@@ -80,16 +80,18 @@ sections:
                     load_frequency_192: sensor.powmr_inverter_load_frequency
                     grid_connected_status_194: binary_sensor.powmr_inverter_grid_active
                     grid_ct_power_172: sensor.powmr_on_grid_power
-                    day_load_energy_84: sensor.powmr_inverter_load_power_energy_spent_daily
+                    day_load_energy_84: sensor.powmr_inverter_daily_energy
                     battery_voltage_183: sensor.powmr_inverter_battery_voltage
                     battery_soc_184: sensor.inverter_battery_soc
                     battery_power_190: sensor.powmr_inverter_battery_power
                     battery_current_191: sensor.powmr_inverter_battery_current
+                    #battery_temp_182: sensor.jkbms_b2a8s20p_calb_temperature_sensor_1
                     battery_rated_capacity: 480
                     pv1_power_186: sensor.powmr_inverter_pv_power
                     pv1_voltage_109: sensor.powmr_inverter_pv_voltage
                     pv1_current_110: sensor.powmr_inverter_pv_current
-                    day_pv_energy_108: sensor.powmr_inverter_pv_power_energy_spent_daily
+                    day_pv_energy_108: sensor.powmr_inverter_pv_daily_energy
+                    #environment_temp: sensor.sonoff_sw1_bme280_temperature_2
                     day_battery_charge_70: sensor.powmr_inverter_battery_daily_charge_energy
                     day_battery_discharge_71: sensor.powmr_inverter_battery_daily_discharge_energy
       - type: tile
