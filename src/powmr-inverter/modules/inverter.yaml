@@ -23,10 +23,6 @@ modbus_controller:
 
 sensor:
 
-  ###################################
-  # Read first group (44 registers) #
-  ###################################
-
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
     name: "Grid Voltage"
@@ -406,10 +402,6 @@ sensor:
     unit_of_measurement: "V"
     lambda: |-
       return swapBytes(x);
-
-  # ####################################
-  # # Read second group (16 registers) #
-  # ####################################
 
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
@@ -963,7 +955,6 @@ text_sensor:
     raw_encode: HEXBYTES
     lambda: |-
       uint16_t sensorIndex = swapBytes(modbus_controller::word_from_hex_str(x, 0));
-      updateUnknownSelect(sensorIndex, id(charger_source_priority_select));
       switch (sensorIndex) {
         case 0: return std::string("Solar first");
         case 1: return std::string("Solar and Utility");
@@ -981,7 +972,6 @@ text_sensor:
     raw_encode: HEXBYTES
     lambda: |-
       uint16_t sensorIndex = swapBytes(modbus_controller::word_from_hex_str(x, 0));
-      updateUnknownSelect(sensorIndex, id(output_source_priority_select));
       switch (sensorIndex) {
         case 0: return std::string("Utility first (USB)");
         case 1: return std::string("Solar first (SUB)");
@@ -1174,6 +1164,8 @@ text_sensor:
 
 select:
 
+# 5001 - ? Remove all power history ["0": "Do nothing","1": "Remove all power history"]
+
   - platform: modbus_controller
     name: "Buzzer Alarm"
     icon: mdi:speaker-wireless
@@ -1311,6 +1303,18 @@ select:
 #    optionsmap:
 #      "Off": 0
 #      "On": 1
+
+#  - platform: modbus_controller
+#    name: "Restore Defaults (!RESET!)"
+#    icon: mdi:restore
+#    optimistic: true
+#    skip_updates: ${select_skip_updates}
+#    entity_category: config
+#    address: 5016
+#    value_type: U_WORD
+#    optionsmap:
+#      "NO": 0
+#      "YES": 1
 
   - platform: modbus_controller
     id: charger_source_priority_select
@@ -1494,3 +1498,51 @@ number:
     max_value: 24.0 # 12V - 12, 48V - 48
     step: 0.1
     multiply: 10
+
+#  - platform: modbus_controller
+#    name: "Battery Equalization voltage"
+#    id: battery_equ_voltage
+#    icon: mdi:battery-medium
+#    skip_updates: ${select_skip_updates}
+#    entity_category: config
+#    address: 5030
+#    value_type: U_WORD
+#    min_value: 25.0 # 48V - 48
+#    max_value: 31.5 # 48V - 61
+#    step: 0.1
+#    multiply: 10
+#  - platform: modbus_controller
+#    name: "Battery Equalized Time"
+#    id: battery_equ_time
+#    icon: mdi:battery-clock-outline
+#    skip_updates: ${select_skip_updates}
+#    entity_category: config
+#    address: 5031
+#    value_type: U_WORD
+#    force_new_range: true
+#    min_value: 5
+#    max_value: 900
+#    step: 5
+#  - platform: modbus_controller
+#    name: "Battery Equalized Timeout"
+#    id: battery_equ_timeout
+#    icon: mdi:battery-remove-outline
+#    skip_updates: ${select_skip_updates}
+#    entity_category: config
+#    address: 5032
+#    value_type: U_WORD
+#    min_value: 5
+#    max_value: 900
+#    step: 5
+#  - platform: modbus_controller
+#    name: "Battery Equalization interval"
+#    id: battery_equ_interval
+#    icon: mdi:update
+#    skip_updates: ${select_skip_updates}
+#    entity_category: config
+#    address: 5033
+#    value_type: U_WORD
+#    force_new_range: true
+#    min_value: 0
+#    max_value: 90
+#    step: 1
