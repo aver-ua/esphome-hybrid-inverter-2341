@@ -20,7 +20,18 @@ Registers map
 2) Edit substitutions & customize `powmr-inverter.yaml` & `main.yaml`
 3) Flash firmware to your ESP32
 
-Note. Some registers (like "Machine Type", "Main CPU Version", etc) are commented out in `/modules/inverter.yaml` because I don't need them.
+The code is divided into packages:
+1) `secrets.yaml` - WIFI, OTA, AP passwords
+2) `common-system.yaml` - system configuration (wifi, ota, api)
+3) `common-sensors.yaml` - common sensor like uptime, wifi signal, total_daily_energy, etc.
+4) `inverter.yaml` - basic inverter sensors
+5) `inverter-info.yaml` - additional inverter info sensors like Machine Type, nominal input/output voltage, current, power. **Commented out** by default
+6) `pzem.yaml` - PZEM module configuration and sensors. **Commented out** by default
+7) `pow-hvm4.2m-24v.yaml` - specific configs and sensors for 4.2kW model
+8) `pow-hvm6.2m-48v.yaml` - specific configs and sensors for 6.2kW model. **Commented out** by default
+9) `pow-hvm10.2m-48v.yaml` - specific configs and sensors for 10.2kW model. **Commented out** by default
+
+Note. Some registers (like Battery Equalization) are commented out in `/modules/inverter.yaml` because I don't need them.
 
 ## Inverter card
 For easy integration into Home Assistant, you can use the [following snippet](/examples/inverter-card-example.yaml).  
