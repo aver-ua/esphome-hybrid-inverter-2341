@@ -23,10 +23,6 @@ modbus_controller:
 
 sensor:
 
-  ###################################
-  # Read first group (44 registers) #
-  ###################################
-
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
     name: "Grid Voltage"
@@ -406,10 +402,6 @@ sensor:
     unit_of_measurement: "V"
     lambda: |-
       return swapBytes(x);
-
-  # ####################################
-  # # Read second group (16 registers) #
-  # ####################################
 
   - platform: modbus_controller
     modbus_controller_id: smg_inverter
