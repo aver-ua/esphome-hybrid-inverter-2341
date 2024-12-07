@@ -16,12 +16,13 @@ uint16_t swapBytes(std::string value)
   return (intValue << 8) | (intValue >> 8);
 }
 
-//uint32_t swapBytes32( uint32_t val )
-//{
-//    val = ((val << 8) & 0xFF00FF00 ) | ((val >> 8) & 0xFF00FF ); 
-//    return (val << 16) | (val >> 16);
-//}
+uint32_t swapBytes32( uint32_t val )
+{
+    val = ((val << 8) & 0xFF00FF00 ) | ((val >> 8) & 0xFF00FF ); 
+    return (val << 16) | (val >> 16);
+}
 
+/*
 void updateUnknownSelect(uint16_t sensorIndex, esphome::modbus_controller::ModbusSelect* selectComp)
 {
   const char* logTag = "myHelpers";
@@ -32,3 +33,4 @@ void updateUnknownSelect(uint16_t sensorIndex, esphome::modbus_controller::Modbu
     call.perform();
   }
 }
+*/
