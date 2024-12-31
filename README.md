@@ -13,7 +13,8 @@ Registers map
 3) [registers-map-SmartESS.md](/docs/registers-map-SmartESS.md) - compilated from `0925.json`
 
 ## Connection
-![PowMr ESP32 connection diagram](images/powmr_esp32_connection.png "PowMr ESP32 connection diagram")
+![PowMr ESP32 connection diagram](images/powmr_esp32_connection.png "PowMr ESP32 connection diagram")  
+See PCB board files and example in folder [/pcb/](/pcb/)
 
 ## Usage
 1) Copy the contents of the `src` repo folder to your ESPHome configuration directory
