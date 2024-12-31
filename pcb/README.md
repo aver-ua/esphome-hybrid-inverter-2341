@@ -4,3 +4,5 @@ Files for https://easyeda.com/
 - [EasyEDA PCB](EasyEDA_PCB_PCB_ESPHome_Inverter_2341.json)
 
 ![PCB Scheme](Schematic_ESPHome_Inverter_2341.png)
+
+![Board Example](board_example.jpg))
