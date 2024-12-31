@@ -45,3 +45,4 @@ The following custom plugins are required: [sunsynk-power-flow-card](https://git
 - https://github.com/syssi/esphome-smg-ii
 - https://github.com/syssi/esphome-pipsolar
 - https://github.com/alexeyden/openess
+- https://github.com/sabatex/NetDaemonApps.InverterAnenji-4kw-7.2kw
