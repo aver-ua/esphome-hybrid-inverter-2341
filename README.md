@@ -36,6 +36,7 @@ Note. Some registers (like Battery Equalization) are commented out in `/modules/
 
 ## Inverter card
 For easy integration into Home Assistant, you can use the [following snippet](/examples/inverter-card-example.yaml).  
+<img src="/examples/inverter-card-screenshots/lovelace_powmr.png" alt="Lovelace dashboard example" width="600">  
 [Lovelace dashboard example](/examples/lovelace-powmr.yaml), [screenshot](/examples/inverter-card-screenshots/lovelace_powmr.png).   
 The following custom plugins are required: [sunsynk-power-flow-card](https://github.com/slipx06/sunsynk-power-flow-card), [stack-in-card](https://github.com/custom-cards/stack-in-card), [canary](https://github.com/jcwillox/lovelace-canary), [mini-graph-card](https://github.com/kalkih/mini-graph-card).  
 
