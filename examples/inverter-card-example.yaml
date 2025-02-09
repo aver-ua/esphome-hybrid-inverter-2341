@@ -65,13 +65,17 @@ cards:
             show_daily_sell: false
             show_nonessential: false
             grid_off_colour: "#aaaa"
+            auto_scale: true
+            dynamic_icon: true
+            dynamic_colour: true
+            energy_cost_decimals: 3
           entities:
             inverter_voltage_154: sensor.powmr_inverter_load_voltage
             inverter_current_164: sensor.powmr_inverter_load_current
             inverter_power_175: sensor.powmr_inverter_load_power
             load_frequency_192: sensor.powmr_inverter_load_frequency
             grid_connected_status_194: binary_sensor.powmr_inverter_grid_active
-            grid_ct_power_172: sensor.powmr_on_grid_power
+            #grid_ct_power_172: sensor.powmr_grid_power # inverter grid power consumption 
             day_load_energy_84: sensor.powmr_inverter_daily_energy
             battery_voltage_183: sensor.powmr_inverter_battery_voltage
             battery_soc_184: sensor.powmr_inverter_battery_soc
@@ -86,3 +90,8 @@ cards:
             #environment_temp: sensor.sonoff_sw1_bme280_temperature_2
             day_battery_charge_70: sensor.powmr_inverter_battery_daily_charge_energy
             day_battery_discharge_71: sensor.powmr_inverter_battery_daily_discharge_energy
+            # add your essentials loads
+            #essential_load1: sensor.boiler_shp_plug_power
+            #essential_load2: sensor.earu_mcb_power
+            #essential_load3: sensor.fridge_plug_power
+            #essential_load4: sensor.freezer_plug_bl0937_power
