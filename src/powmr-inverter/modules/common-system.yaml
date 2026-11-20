@@ -1,11 +1,12 @@
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
+  power_save_mode: none
   ap:
     ssid: "${node_name} Fallback"
     password: !secret ap_password
 
-# captive_portal:
+captive_portal:
 
 ota:
   id: "${node_id}_ota"

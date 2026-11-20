@@ -1,7 +1,7 @@
 sensor:
   - platform: internal_temperature
     name: "Controller Temperature"
-    update_interval: ${update_interval}
+    update_interval: 60s
     state_class: measurement
     device_class: temperature
     #filters:
@@ -11,13 +11,13 @@ sensor:
     id: esp_uptime
     entity_category: "diagnostic"
     device_class: duration
-    update_interval: ${update_interval}
+    update_interval: 60s
     on_raw_value:
       then:
         - text_sensor.template.publish:
             id: uptime_human
             state: !lambda |-
-              int seconds = round(id(esp_uptime).raw_state);
+              int seconds = round(id(esp_uptime).get_raw_state());
               int days = seconds / (24 * 3600);
               seconds = seconds % (24 * 3600);
               int hours = seconds / 3600;
@@ -34,7 +34,7 @@ sensor:
     name: "RSSI"
     id: wifi_rssi
     entity_category: "diagnostic"
-    update_interval: ${update_interval}
+    update_interval: 60s
   - platform: copy # Reports the WiFi signal strength in %
     source_id: wifi_rssi
     name: "WiFi Signal Percent"
@@ -42,6 +42,7 @@ sensor:
         - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
     unit_of_measurement: "%"
     entity_category: "diagnostic"
+    device_class: ""
 #  - platform: dht
 #    pin: GPIO4
 #    model: AM2302
@@ -49,9 +50,10 @@ sensor:
 #      name: "OutDoor Temperature"
 #    humidity:
 #      name: "OutDoor Humidity"
-#    update_interval: ${update_interval}
+#    update_interval: 60s
   - platform: total_daily_energy
     name: "Daily Energy"
+    time_id: hass_time
     restore: true
     power_id: load_power
     unit_of_measurement: 'kWh'
@@ -63,6 +65,7 @@ sensor:
       - multiply: 0.001
   - platform: total_daily_energy
     name: "PV Daily Energy"
+    time_id: hass_time
     restore: true
     power_id: pv_power
     unit_of_measurement: 'kWh'
@@ -73,6 +76,7 @@ sensor:
       - multiply: 0.001
   - platform: total_daily_energy
     name: "Battery Daily Charge Energy"
+    time_id: hass_time
     restore: true
     power_id: battery_charge_power
     unit_of_measurement: 'kWh'
@@ -83,6 +87,7 @@ sensor:
       - multiply: 0.001
   - platform: total_daily_energy
     name: "Battery Daily Discharge Energy"
+    time_id: hass_time
     restore: true
     power_id: battery_discharge_power
     unit_of_measurement: 'kWh'

@@ -11,15 +11,24 @@ modbus:
   - id: modbus_inverter
     uart_id: uart_inverter
     send_wait_time: 250ms
+    turnaround_time: 1s
 
 modbus_controller:
+  # 1. Швидкий контролер для телеметрії в реальному часі
   - id: smg_inverter
     address: 0x05
     modbus_id: modbus_inverter
     setup_priority: -10
-    offline_skip_updates: 100
-    command_throttle: 1s
+    offline_skip_updates: 5
     update_interval: ${update_interval}
+
+  # 2. Повільний контролер для налаштувань та рідкісної діагностики
+  - id: smg_inverter_slow
+    address: 0x05
+    modbus_id: modbus_inverter
+    setup_priority: -11
+    offline_skip_updates: 2
+    update_interval: ${update_interval_slow}
 
 sensor:
 
@@ -96,6 +105,7 @@ sensor:
     device_class: current
     unit_of_measurement: "A"
     accuracy_decimals: 1
+    update_interval: ${update_interval}
     icon: mdi:solar-power
     lambda: |-
       if (id(pv_voltage).state == 0) {
@@ -298,7 +308,7 @@ sensor:
     register_type: holding
     value_type: U_WORD
     unit_of_measurement: "%"
-    device_class: power_factor
+    device_class: ""
     state_class: measurement
     lambda: |-
       return swapBytes(x);
@@ -307,17 +317,16 @@ sensor:
     modbus_controller_id: smg_inverter
     name: "Load Percent"
     address: 4515
-    register_count: 15
     register_type: holding
     value_type: U_WORD
     unit_of_measurement: "%"
-    device_class: power_factor
+    device_class: ""
     state_class: measurement
     lambda: |-
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Target Output Frequency"
     icon: mdi:cosine-wave
     accuracy_decimals: 0
@@ -331,11 +340,11 @@ sensor:
       switch (value) {
         case 0: return std::uint16_t(50);
         case 1: return std::uint16_t(60);
-        default: return x;
+        default: return value;
       }
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Max Total Charging Current"
     icon: mdi:battery-charging-100
     accuracy_decimals: 0
@@ -348,7 +357,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Target Output Voltage"
     icon: mdi:sine-wave
     accuracy_decimals: 0
@@ -361,7 +370,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Max Utility Charging Current"
     icon: mdi:transmission-tower-export
     accuracy_decimals: 0
@@ -374,7 +383,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Back To Utility Source Voltage"
     icon: mdi:transmission-tower-import
     filters:
@@ -389,7 +398,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Back To Battery Source Voltage"
     icon: mdi:power-plug-battery
     filters:
@@ -404,7 +413,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Bulk Charging Voltage"
     icon: mdi:battery-arrow-down
     filters:
@@ -419,7 +428,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Floating Charging Voltage"
     icon: mdi:battery-sync-outline
     filters:
@@ -434,7 +443,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Low CutOff Voltage"
     icon: mdi:battery-off
     filters:
@@ -449,7 +458,7 @@ sensor:
       return swapBytes(x);
 
 #  - platform: modbus_controller
-#    modbus_controller_id: smg_inverter
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalization Voltage"
 #    icon: mdi:battery-medium
 #    filters:
@@ -464,7 +473,7 @@ sensor:
 #      return swapBytes(x);
 
 #  - platform: modbus_controller
-#    modbus_controller_id: smg_inverter
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalized Time"
 #    icon: mdi:battery-clock-outline
 #    accuracy_decimals: 0
@@ -476,7 +485,7 @@ sensor:
 #      return swapBytes(x);
 
 #  - platform: modbus_controller
-#    modbus_controller_id: smg_inverter
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalized Timeout"
 #    icon: mdi:battery-remove-outline
 #    accuracy_decimals: 0
@@ -488,13 +497,12 @@ sensor:
 #      return swapBytes(x);
 
 #  - platform: modbus_controller
-#    modbus_controller_id: smg_inverter
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Equalization Interval"
 #    icon: mdi:update
 #    accuracy_decimals: 0
 #    entity_category: diagnostic
 #    address: 4552
-#    register_count: 5
 #    register_type: holding
 #    value_type: U_WORD
 #    lambda: |-
@@ -502,30 +510,30 @@ sensor:
 
 # something "Working State"/"Mains supply State" related...
 # 2 - Line Mode, 7 - Invert Mode ... 
-  - platform: modbus_controller
-    modbus_controller_id: smg_inverter
-    name: "Register4554"
-    entity_category: diagnostic
-    address: 4554
-    register_type: holding
-    value_type: U_WORD
-    lambda: |-
-      return swapBytes(x);
+#  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
+#    name: "Register4554"
+#    entity_category: diagnostic
+#    address: 4554
+#    register_type: holding
+#    value_type: U_WORD
+#    lambda: |-
+#      return swapBytes(x);
 
 # something PV related...
 # 0 - PV Undervoltage, 13 - PV Discharging, 11 - 
-  - platform: modbus_controller
-    modbus_controller_id: smg_inverter
-    name: "Register4556"
-    entity_category: diagnostic
-    address: 4556
-    register_type: holding
-    value_type: U_WORD
-    lambda: |-
-      return swapBytes(x);
+#  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
+#    name: "Register4556"
+#    entity_category: diagnostic
+#    address: 4556
+#    register_type: holding
+#    value_type: U_WORD
+#    lambda: |-
+#      return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "PV Temperature"
     icon: mdi:thermometer-lines
     accuracy_decimals: 0
@@ -543,7 +551,7 @@ binary_sensor:
     name: "Grid Active"
     id: grid_active
     lambda: |-
-      if (id(grid_state).state == "Abnormal") {
+      if (id(grid_state).state == "Abnormal" || id(grid_state).state.empty()) {
         return false;
       } else {
         return true;
@@ -820,7 +828,7 @@ binary_sensor:
     bitmask: 0x1
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Record Fault Code"
     icon: mdi:alert-plus-outline
     entity_category: diagnostic
@@ -829,7 +837,7 @@ binary_sensor:
     bitmask: 0x1
 
 #  - platform: modbus_controller
-#    modbus_controller_id: smg_inverter
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalization"
 #    icon: mdi:battery-arrow-up-outline
 #    entity_category: diagnostic
@@ -838,7 +846,7 @@ binary_sensor:
 #    bitmask: 0x2
 
 #  - platform: modbus_controller
-#    modbus_controller_id: smg_inverter
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalization activated immediately"
 #    icon: mdi:battery-plus
 #    entity_category: diagnostic
@@ -847,7 +855,7 @@ binary_sensor:
 #    bitmask: 0x4
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Buzzer Alarm"
     icon: mdi:speaker-wireless
     entity_category: diagnostic
@@ -856,7 +864,7 @@ binary_sensor:
     bitmask: 0x100
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Power saving mode"
     icon: mdi:leaf-circle-outline
     entity_category: diagnostic
@@ -865,7 +873,7 @@ binary_sensor:
     bitmask: 0x200
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Backlight"
     icon: mdi:alarm-light
     entity_category: diagnostic
@@ -874,7 +882,7 @@ binary_sensor:
     bitmask: 0x400
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Restart On Overload"
     icon: mdi:restart
     entity_category: diagnostic
@@ -883,7 +891,7 @@ binary_sensor:
     bitmask: 0x800
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Restart On Overheat"
     icon: mdi:restart-alert
     entity_category: diagnostic
@@ -892,7 +900,7 @@ binary_sensor:
     bitmask: 0x1000
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Beep On Primary Source Fail"
     icon: mdi:speaker-message
     entity_category: diagnostic
@@ -901,7 +909,7 @@ binary_sensor:
     bitmask: 0x2000
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Return To Default Screen"
     icon: mdi:backburger
     entity_category: diagnostic
@@ -910,7 +918,7 @@ binary_sensor:
     bitmask: 0x4000
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Overload Bypass"
     icon: mdi:transit-skip
     entity_category: diagnostic
@@ -931,7 +939,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t sensorIndex = swapBytes(modbus_controller::word_from_hex_str(x, 0));
+      uint16_t sensorIndex = swapBytes(modbus::helpers::word_from_hex_str(x, 0));
       switch (sensorIndex) {
         case 7: return std::string("ShutDown");
         case 3: return std::string("Invert Mode");
@@ -945,7 +953,7 @@ text_sensor:
       }
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     id: charger_source_priority_text
     name: "Charger Source Priority"
     entity_category: diagnostic
@@ -954,7 +962,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t sensorIndex = swapBytes(modbus_controller::word_from_hex_str(x, 0));
+      uint16_t sensorIndex = swapBytes(modbus::helpers::word_from_hex_str(x, 0));
       switch (sensorIndex) {
         case 0: return std::string("Solar first");
         case 1: return std::string("Solar and Utility");
@@ -963,7 +971,7 @@ text_sensor:
       }
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Output Source Priority"
     entity_category: diagnostic
     address: 4537
@@ -971,7 +979,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t sensorIndex = swapBytes(modbus_controller::word_from_hex_str(x, 0));
+      uint16_t sensorIndex = swapBytes(modbus::helpers::word_from_hex_str(x, 0));
       switch (sensorIndex) {
         case 0: return std::string("Utility first (USB)");
         case 1: return std::string("Solar first (SUB)");
@@ -980,7 +988,7 @@ text_sensor:
       }
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "AC Input Voltage Range"
     icon: mdi:home-import-outline
     entity_category: diagnostic
@@ -989,7 +997,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t value = swapBytes(modbus_controller::word_from_hex_str(x, 0));
+      uint16_t value = swapBytes(modbus::helpers::word_from_hex_str(x, 0));
       switch (value) {
         case 0: return std::string("Appliances");
         case 1: return std::string("UPS");
@@ -997,7 +1005,7 @@ text_sensor:
       }
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Battery type"
     icon: mdi:home-battery
     entity_category: diagnostic
@@ -1006,7 +1014,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t value = swapBytes(modbus_controller::word_from_hex_str(x, 0));
+      uint16_t value = swapBytes(modbus::helpers::word_from_hex_str(x, 0));
       switch (value) {
         case 0: return std::string("AGM");
         case 1: return std::string("Flooded");
@@ -1024,7 +1032,7 @@ text_sensor:
     register_type: holding
     raw_encode: HEXBYTES
     lambda: |-
-      uint8_t val = modbus_controller::byte_from_hex_str(x, 0);
+      uint8_t val = modbus::helpers::byte_from_hex_str(x, 0);
       val = val & 0x3;
       switch(val) {
         case 3: return std::string("Ok");
@@ -1043,7 +1051,7 @@ text_sensor:
     register_type: holding
     raw_encode: HEXBYTES
     lambda: |-
-      uint8_t val = modbus_controller::byte_from_hex_str(x, 0);
+      uint8_t val = modbus::helpers::byte_from_hex_str(x, 0);
       val = val & 0xC;
       val = val >> 2;
       switch(val) {
@@ -1064,7 +1072,7 @@ text_sensor:
     register_type: holding
     raw_encode: HEXBYTES
     lambda: |-
-      uint8_t val = modbus_controller::byte_from_hex_str(x, 0);
+      uint8_t val = modbus::helpers::byte_from_hex_str(x, 0);
       val = val & 0x30;
       val = val >> 4;
       switch(val) {
@@ -1085,7 +1093,7 @@ text_sensor:
     register_type: holding
     raw_encode: HEXBYTES
     lambda: |-
-      uint8_t val = modbus_controller::byte_from_hex_str(x, 0);
+      uint8_t val = modbus::helpers::byte_from_hex_str(x, 0);
       val = val & 0xC0;
       val = val >> 6;
       switch(val) {
@@ -1105,7 +1113,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t sensorIndex = modbus_controller::word_from_hex_str(x, 0);
+      uint16_t sensorIndex = modbus::helpers::word_from_hex_str(x, 0);
       switch (sensorIndex) {
         case 0x0a00:
           return std::string("Off");
@@ -1167,162 +1175,178 @@ select:
 # 5001 - ? Remove all power history ["0": "Do nothing","1": "Remove all power history"]
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Buzzer Alarm"
     icon: mdi:speaker-wireless
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5002
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Power saving mode"
     icon: mdi:leaf-circle-outline
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5003
     value_type: U_WORD
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Backlight"
     icon: mdi:alarm-light
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5004
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Restart On Overload"
     icon: mdi:restart
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5005
     value_type: U_WORD
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Restart On Overheat"
     icon: mdi:restart-alert
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5006
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Beep On Primary Source Fail"
     icon: mdi:speaker-message
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5007
     value_type: U_WORD
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Return To Default Display"
     icon: mdi:backburger
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5008
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Overload Bypass"
     icon: mdi:transit-skip
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5009
     value_type: U_WORD
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Record fault code"
     icon: mdi:folder-alert
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5010
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     optionsmap:
       "Off": 0
       "On": 1
 
 #  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalization"
 #    icon: mdi:approximately-equal
 #    optimistic: true
-#    skip_updates: ${select_skip_updates}
 #    entity_category: config
 #    address: 5011
 #    value_type: U_WORD
+#    reuse_previous_range: false
 #    optionsmap:
 #      "Off": 0
 #      "On": 1
 
 #  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalization activated immediately"
 #    icon: mdi:battery-arrow-up
 #    optimistic: true
-#    skip_updates: ${select_skip_updates}
 #    entity_category: config
 #    address: 5012
 #    value_type: U_WORD
-#    force_new_range: true
+#    reuse_previous_range: false
 #    optionsmap:
 #      "Off": 0
 #      "On": 1
 
 #  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Restore Defaults (!RESET!)"
 #    icon: mdi:restore
 #    optimistic: true
-#    skip_updates: ${select_skip_updates}
 #    entity_category: config
 #    address: 5016
 #    value_type: U_WORD
+#    reuse_previous_range: false
 #    optionsmap:
 #      "NO": 0
 #      "YES": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     id: charger_source_priority_select
     name: "Charger Source Priority"
     icon: mdi:battery-charging
     optimistic: true
-    skip_updates: ${select_skip_updates}
-    force_new_range: true
+    #skip_updates: ${select_skip_updates}
+    reuse_previous_range: false
     entity_category: config
     address: 5017
     value_type: U_WORD
@@ -1332,11 +1356,13 @@ select:
       "Only Solar": 2
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     id: output_source_priority_select
     name: "Output Source Priority"
     icon: mdi:export
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
+    reuse_previous_range: false
     entity_category: config
     address: 5018
     value_type: U_WORD
@@ -1346,25 +1372,28 @@ select:
       "SBU priority": 2
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "AC input voltage range"
     icon: mdi:home-import-outline
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5019
-    force_new_range: true
+    reuse_previous_range: false
     value_type: U_WORD
     optionsmap:
       "APL (90-280)": 0
       "UPS (170-280)": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Battery type"
     icon: mdi:car-battery
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5020
+    reuse_previous_range: false
     value_type: U_WORD
     optionsmap:
       "AGM": 0
@@ -1372,26 +1401,29 @@ select:
       "User Defined": 2
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Output Frequency"
     icon: mdi:cosine-wave
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5021
-    force_new_range: true
+    reuse_previous_range: false
     value_type: U_WORD
     optionsmap:
       "50Hz": 0
       "60Hz": 1
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Max Total Charge Current"
     id: max_total_charge_current
     icon: mdi:battery-charging-100
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5022
+    reuse_previous_range: false
     value_type: U_WORD
     optionsmap:
       "10": 10
@@ -1404,13 +1436,14 @@ select:
       "80": 80
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Output voltage"
     icon: mdi:home-export-outline
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5023
-    force_new_range: true
+    reuse_previous_range: false
     value_type: U_WORD
     optionsmap:
       "220V": 220
@@ -1418,13 +1451,15 @@ select:
       "240V": 240
 
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Utility Charge Current"
     id: utility_charge_current
     icon: mdi:transmission-tower-export
     optimistic: true
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5024
+    reuse_previous_range: false
     value_type: U_WORD
     optionsmap:
       "10": 10
@@ -1436,113 +1471,122 @@ select:
 
 number:
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Back To Utility Source Voltage"
     id: back_to_utility_source_voltage
     icon: mdi:transmission-tower-import
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5025
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     min_value: 21.0 # 12V - 10.5, 48V - 45
     max_value: 25.5 # 12V - 15.0, 48V - 51
     step: 0.5 # 48V - 1
     multiply: 10
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Back To Battery Source Voltage"
     id: back_to_battery_source_voltage
     icon: mdi:power-plug-battery
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5026
     value_type: U_WORD
+    reuse_previous_range: false
     min_value: 24.0 # 12V - 12, 48V - 48
     max_value: 29.0 # 12V - 17, 48V - 58
     step: 0.5 # 48V - 1
     multiply: 10
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Bulk Charging Voltage"
     id: bulk_charging_voltage
     icon: mdi:battery-arrow-down
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5027
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     min_value: 25.0 # 12V - 12.5, 48V - 48
     max_value: 31.5 # 12V - 15.5, 48V - 61
     step: 0.1
     multiply: 10
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Floating Charging Voltage"
     id: floating_charging_voltage
     icon: mdi:battery-sync-outline
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5028
+    reuse_previous_range: false
     value_type: U_WORD
     min_value: 25.0 # 12V - 12.5, 48V - 48
     max_value: 31.5 # 12V - 15.5, 48V - 61
     step: 0.1
     multiply: 10
   - platform: modbus_controller
+    modbus_controller_id: smg_inverter_slow
     name: "Low DC cut-off voltage"
     id: low_dc_cut_off_voltage
     icon: mdi:battery-off
-    skip_updates: ${select_skip_updates}
+    #skip_updates: ${select_skip_updates}
     entity_category: config
     address: 5029
     value_type: U_WORD
-    force_new_range: true
+    reuse_previous_range: false
     min_value: 20.0 # 12V - 10, 48V - 40
     max_value: 24.0 # 12V - 12, 48V - 48
     step: 0.1
     multiply: 10
 
 #  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalization voltage"
 #    id: battery_equ_voltage
 #    icon: mdi:battery-medium
-#    skip_updates: ${select_skip_updates}
 #    entity_category: config
 #    address: 5030
 #    value_type: U_WORD
+#    reuse_previous_range: false
 #    min_value: 25.0 # 48V - 48
 #    max_value: 31.5 # 48V - 61
 #    step: 0.1
 #    multiply: 10
 #  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalized Time"
 #    id: battery_equ_time
 #    icon: mdi:battery-clock-outline
-#    skip_updates: ${select_skip_updates}
 #    entity_category: config
 #    address: 5031
 #    value_type: U_WORD
-#    force_new_range: true
+#    reuse_previous_range: false
 #    min_value: 5
 #    max_value: 900
 #    step: 5
 #  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalized Timeout"
 #    id: battery_equ_timeout
 #    icon: mdi:battery-remove-outline
-#    skip_updates: ${select_skip_updates}
 #    entity_category: config
 #    address: 5032
 #    value_type: U_WORD
+#    reuse_previous_range: false
 #    min_value: 5
 #    max_value: 900
 #    step: 5
 #  - platform: modbus_controller
+#    modbus_controller_id: smg_inverter_slow
 #    name: "Battery Equalization interval"
 #    id: battery_equ_interval
 #    icon: mdi:update
-#    skip_updates: ${select_skip_updates}
 #    entity_category: config
 #    address: 5033
 #    value_type: U_WORD
-#    force_new_range: true
+#    reuse_previous_range: false
 #    min_value: 0
 #    max_value: 90
 #    step: 1

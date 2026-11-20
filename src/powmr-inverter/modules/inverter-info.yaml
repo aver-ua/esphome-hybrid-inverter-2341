@@ -1,7 +1,7 @@
 text_sensor:
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     id: Machine_Type
     name: "Machine Type"
     icon: mdi:memory
@@ -11,7 +11,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t sensorIndex = swapBytes(modbus_controller::word_from_hex_str(x, 0));
+      uint16_t sensorIndex = swapBytes(modbus::helpers::word_from_hex_str(x, 0));
       switch (sensorIndex) {
         case 0: return std::string("Solar Inverter");
         case 1: return std::string("Voltage regulator");
@@ -19,7 +19,7 @@ text_sensor:
       }
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     id: Battery_Piece
     name: "Battery Piece"
     icon: mdi:battery
@@ -29,7 +29,7 @@ text_sensor:
     response_size: 2
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t sensorIndex = swapBytes(modbus_controller::word_from_hex_str(x, 0));
+      uint16_t sensorIndex = swapBytes(modbus::helpers::word_from_hex_str(x, 0));
       switch (sensorIndex) {
         case 0: return std::string("No Battery");
         case 1: return std::string("24V");
@@ -40,7 +40,7 @@ text_sensor:
 sensor:
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Main CPU version"
     icon: mdi:chip
     entity_category: diagnostic
@@ -51,7 +51,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Secondary CPU version"
     icon: mdi:chip
     entity_category: diagnostic
@@ -62,7 +62,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Nominal output apparent power"
     entity_category: diagnostic
     unit_of_measurement: "VA"
@@ -74,7 +74,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Nominal output active power"
     entity_category: diagnostic
     unit_of_measurement: "W"
@@ -86,7 +86,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Nominal AC voltage"
     entity_category: diagnostic
     unit_of_measurement: "V"
@@ -98,7 +98,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Nominal AC current"
     entity_category: diagnostic
     unit_of_measurement: "A"
@@ -110,7 +110,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Rated battery voltage"
     entity_category: diagnostic
     unit_of_measurement: "V"
@@ -124,7 +124,7 @@ sensor:
       - multiply: 0.1
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Nominal output voltage"
     entity_category: diagnostic
     unit_of_measurement: "V"
@@ -136,7 +136,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Nominal output frequency"
     entity_category: diagnostic
     unit_of_measurement: "Hz"
@@ -150,7 +150,7 @@ sensor:
       - multiply: 0.1
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "Nominal output current"
     entity_category: diagnostic
     unit_of_measurement: "A"
@@ -162,7 +162,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "ID1"
     icon: mdi:identifier
     entity_category: diagnostic
@@ -173,7 +173,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "ID2"
     icon: mdi:identifier
     entity_category: diagnostic
@@ -184,7 +184,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "ID3"
     icon: mdi:identifier
     entity_category: diagnostic
@@ -195,7 +195,7 @@ sensor:
       return swapBytes(x);
 
   - platform: modbus_controller
-    modbus_controller_id: smg_inverter
+    modbus_controller_id: smg_inverter_slow
     name: "ID4"
     icon: mdi:identifier
     entity_category: diagnostic
