@@ -17,6 +17,8 @@ esp32:
   board: esp32dev #nodemcu-32s
   framework:
     type: arduino #esp-idf
+    advanced: 
+      flash_chip: generic
 
 packages:
   main: !include powmr-inverter/main.yaml
